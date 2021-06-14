@@ -1,0 +1,25 @@
+test_job 04/29/2009
+###################
+:date: 2009-04-29 01:36
+:author: Alex
+:tags: Uncategorized
+
+-  `abiquo: enterprise open source cloud computing platform`_
+
+   cloud computing opensource platform
+
+   `tags`_: `cloud`_, `computing`_, `opensource`_
+
+Posted from `Diigo`_. The rest of my `favorite links`_ are here.
+
+.. raw:: html
+
+   </p>
+
+.. _`abiquo: enterprise open source cloud computing platform`: http://www.abiquo.com
+.. _tags: http://www.diigo.com/cloud/alex_mikhalev
+.. _cloud: http://www.diigo.com/user/alex_mikhalev/cloud
+.. _computing: http://www.diigo.com/user/alex_mikhalev/computing
+.. _opensource: http://www.diigo.com/user/alex_mikhalev/opensource
+.. _Diigo: http://www.diigo.com
+.. _favorite links: http://www.diigo.com/user/alex_mikhalev

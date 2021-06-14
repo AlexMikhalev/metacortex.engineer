@@ -27,10 +27,10 @@ content:
   filter_button:
   - name: All
     tag: '*'
-  - name: Deep Learning
-    tag: Deep Learning
-  - name: Other
-    tag: Demo
+  - name: Natural Language Processing
+    tag: Natural Language Processing
+  - name: RedisGears
+    tag: RedisGears
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.

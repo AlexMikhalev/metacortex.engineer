@@ -1,0 +1,33 @@
+test_job 04/27/2009
+###################
+:date: 2009-04-27 01:32
+:author: Alex
+:tags: Uncategorized
+
+-  `IBM Research \| Technical Paper Search \| RESERVOIR - An ICT
+   Infrastructure for Reliable and Effective Delivery of Services as
+   Utilities(Search Reports)`_
+
+   `tags`_: `cloud`_, `computing`_, `enterprise`_, `documentation`_
+
+-  `Reservoir: Project Deliverables`_
+
+   The first issue of the RESERVOIR Architecture document - June 2008.
+
+   `tags`_: `cloud`_, `computing`_, `documentation`_, `enterprise`_
+
+Posted from `Diigo`_. The rest of my `favorite links`_ are here.
+
+.. raw:: html
+
+   </p>
+
+.. _IBM Research \| Technical Paper Search \| RESERVOIR - An ICT Infrastructure for Reliable and Effective Delivery of Services as Utilities(Search Reports): http://domino.watson.ibm.com/library/CyberDig.nsf/papers/A44F6256BB697FCE852574E10052DDEE
+.. _tags: http://www.diigo.com/cloud/alex_mikhalev
+.. _cloud: http://www.diigo.com/user/alex_mikhalev/cloud
+.. _computing: http://www.diigo.com/user/alex_mikhalev/computing
+.. _enterprise: http://www.diigo.com/user/alex_mikhalev/enterprise
+.. _documentation: http://www.diigo.com/user/alex_mikhalev/documentation
+.. _`Reservoir: Project Deliverables`: http://reservoir.cs.ucl.ac.uk/project_deliverables
+.. _Diigo: http://www.diigo.com
+.. _favorite links: http://www.diigo.com/user/alex_mikhalev

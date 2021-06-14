@@ -1,0 +1,28 @@
+test_job 04/25/2009
+###################
+:date: 2009-04-25 01:33
+:author: Alex
+:tags: Uncategorized
+
+-  `CohesiveFT Elastic Server: Seed YOUR Eucalyptus Cloud with Elastic
+   Server`_
+
+   With the recent release of Ubuntu 9.04 Server Edition comes the
+   technology preview of the Ubuntu Enterprise Cloud (UEC) powered by
+   Eucalyptus.
+
+   `tags`_: `cloud`_, `computing`_, `deployment`_
+
+Posted from `Diigo`_. The rest of my `favorite links`_ are here.
+
+.. raw:: html
+
+   </p>
+
+.. _`CohesiveFT Elastic Server: Seed YOUR Eucalyptus Cloud with Elastic Server`: http://blog.elasticserver.com/2009/04/seed-your-eucalyptus-cloud-with-elastic.html
+.. _tags: http://www.diigo.com/cloud/alex_mikhalev
+.. _cloud: http://www.diigo.com/user/alex_mikhalev/cloud
+.. _computing: http://www.diigo.com/user/alex_mikhalev/computing
+.. _deployment: http://www.diigo.com/user/alex_mikhalev/deployment
+.. _Diigo: http://www.diigo.com
+.. _favorite links: http://www.diigo.com/user/alex_mikhalev

@@ -3,9 +3,9 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: Academic # Website name
-baseurl: '' # Website URL
-copyright: '' # Footer text, e.g. '© {year} Me'
+title: 'Dr Alexander Mikhalev: Science, Engineering and Technology' # Website name
+baseurl: 'https://sci-blog.com' # Website URL
+copyright: '&copy {year} Alex Mikhalev ' # Footer text, e.g. '© {year} Me'
 
 ############################
 ## LANGUAGE
@@ -24,6 +24,10 @@ module:
   imports:
     - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy-cms
     - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy
+
+# ### Theme
+# theme:
+#   - hugo-restructured
 
 ############################
 ## ADVANCED
@@ -52,7 +56,8 @@ markup:
     renderer:
       unsafe: true
   highlight:
-    codeFences: false
+    codeFences: true
+    guessSyntax: true
   tableOfContents:
     startLevel: 2
     endLevel: 3

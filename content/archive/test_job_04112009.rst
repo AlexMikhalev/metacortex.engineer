@@ -1,0 +1,23 @@
+test_job 04/11/2009
+###################
+:date: 2009-04-11 01:33
+:author: Alex
+:tags: Uncategorized
+
+-  `Cultured Perl: Perl and the Amazon cloud, Part 2`_
+
+   `tags`_: `perl`_, `amazon`_, `cloud`_
+
+Posted from `Diigo`_. The rest of my `favorite links`_ are here.
+
+.. raw:: html
+
+   </p>
+
+.. _`Cultured Perl: Perl and the Amazon cloud, Part 2`: http://www.ibm.com/developerworks/opensource/library/l-amazon-perl-2/index.html?ca=drs-
+.. _tags: http://www.diigo.com/cloud/alex_mikhalev
+.. _perl: http://www.diigo.com/user/alex_mikhalev/perl
+.. _amazon: http://www.diigo.com/user/alex_mikhalev/amazon
+.. _cloud: http://www.diigo.com/user/alex_mikhalev/cloud
+.. _Diigo: http://www.diigo.com
+.. _favorite links: http://www.diigo.com/user/alex_mikhalev
