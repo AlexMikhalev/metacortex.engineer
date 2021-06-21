@@ -23,6 +23,27 @@ date_format: Jan 2006
 #   Leave other parameters empty if not required.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
+
+- certificate_url: ""
+  date_end: "2017-06-24"
+  date_start: "2017-03-01"
+  description: "This is interdisciplinary course where students learn how to relate business practices, engineering practices, and management practices among each others. This will allow you to maintain the holistic vision of the problem and implement the principle of responsibility for the entire system as a whole.The course consists of six full days of classes with the teacher (total 54 training hours - every other Sunday) and 11 training workshops where you solve problems (total 22 hours - every Wednesday from 19.00 to 21.00). The trainings provide you with system view of how to determine the product of system of interest / service of your project, how to ensure its development and production on time and with minimally involved resources, how to organize people in your enterprise, how to conduct organizational changes and how to set strategic goals."
+  organization: SystemsManagementSchool
+  organization_url: http://system-school.com/
+  title: "Systems Management and Strategy 2017"
+  url: "http://system-school.com/sms"
+
+
+- certificate_url: ""
+  date_end: "2017-09-24"
+  date_start: "2017-09-01"
+  description: "This cource is focused on building high performance and inspired distributed engineering team"
+  organization: SystemsManagementSchool
+  organization_url: http://system-school.com/
+  title: "Engineering Leadership"
+  url: "http://system-school.com/sms"
+
+
 - certificate_url: https://www.credly.com/badges/0733f94c-b44a-4552-9c97-d2a294c0b6d2/public_url
   date_end: ""
   date_start: "2016-06-25"
