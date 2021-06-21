@@ -76,7 +76,14 @@ related:
     - name: categories
       weight: 70
 
-# deployment:
-#   targets:
-#     - name: "mydeployment"
-#     - URL = "s3://www.sci-blog.com"
+deployment:
+  targets:
+    - name: sci-blog.com
+      URL: s3://www.sci-blog.com?region=eu-west-1
+      cloudFrontDistributionID: E391WQTAH5RKRJ
+  matchers:
+    - pattern: ^.+\.(js|css|png|jpg|gif|svg|ttf)$
+      cacheControl: 'max-age=630720000, no-transform, public'
+      gzip: true
+    - pattern: ^.+\.(html|xml|json)$
+      gzip: true
