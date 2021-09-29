@@ -61,7 +61,8 @@ highlight: true
 highlight_languages:
   - r
   - python
-  - Rust
+  - rust
+  - bash
 
 math: true
 diagram: true

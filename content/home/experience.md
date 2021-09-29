@@ -38,7 +38,7 @@ experience:
     date_start: '2011-11-01'
     date_end: '2014-12-01'
     description: |2-
-        Building large scale innovative IT infrastructure. Supervising Software Architects and developers.
+        Building large-scale innovative IT infrastructure. Supervising Software Architects and developers.
         
   - title: Research Fellow 
     company: Wireless Networks and Communication Group, Defense College of Management and Technology, Cranfield University, UK

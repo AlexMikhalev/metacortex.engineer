@@ -36,7 +36,7 @@ links:
   url: https://github.com/applied-knowledge-systems/the-pattern
 url_code: ""
 url_pdf: ""
-url_slides: ""
+url_slides: "https://github.com/applied-knowledge-systems/the-pattern/raw/main/docs/EuroPython%202021_Jule_28_final.pptx"
 url_video: ""
 
 # Markdown Slides (optional).
