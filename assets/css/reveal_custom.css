@@ -1,0 +1,15 @@
+.reveal section h1,
+.reveal section h2,
+.reveal section h3 {
+  color: navy;
+}
+.reveal p {
+  text-align: left;
+}
+.reveal ul {
+  display: block;
+}
+.reveal ol {
+  display: block;
+}
+
