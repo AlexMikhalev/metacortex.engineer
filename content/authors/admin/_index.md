@@ -73,7 +73,7 @@ social:
   link: media/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: "alex@sci-blog.com"
+email: "alex@metacortex.engineer"
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
