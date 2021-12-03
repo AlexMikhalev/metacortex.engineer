@@ -23,6 +23,35 @@ date_format: Jan 2006
 #   Leave other parameters empty if not required.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
+- certificate_url: ""
+  date_end: "2017-05-15"
+  date_start: "2017-08-14"
+  description: "How to achive data compliance using AI and machine learning, demonstrated how to detect GDPR and PCI DSS non-compliance on Raspbery PI"
+  organization: Nationwide Building Society
+  organization_url: https://nationwide.co.uk
+  title: "Chaos Legion team - how to achive data compliance using AI and machine learning"
+  url: ""
+
+- certificate_url: ""
+  date_end: "2017-04-15"
+  date_start: "2017-05-14"
+  description: "Inspired and helped to build prototype for new type of DevOps Architecture - Architecture as a Code, together with Mark Solomon"
+  organization: Nationwide Building Society
+  organization_url: https://nationwide.co.uk
+  title: "DevOps Architecture as a Code"
+  url: ""
+
+- certificate_url: "https://redis.com/blog/build-on-redis-hackathon-winners"
+  date_end: "2021-05-15"
+  date_start: "2021-06-14"
+  description: "The Pattern: Machine Learning Natural Language Processing meets VR/AR:
+Help find relevant knowledge using Artificial Intelligence and novel UX elements, all powered by Redis—new generation real-time data fabric turned into knowledge fabric."
+  organization: Redis
+  organization_url: https://redis.com/
+  title: "Platinum Winner for Build on Redis Hackathon 2021"
+  url: "https://redis.com/blog/build-on-redis-hackathon-winners"
+
+
 
 - certificate_url: ""
   date_end: "2017-06-24"

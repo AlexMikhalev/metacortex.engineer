@@ -20,6 +20,10 @@ feature:
   icon: "engineering"
   icon_pack: custom
   name: Systems Engineering
+- description: 100% 
+  icon: "engineering"
+  icon_pack: custom
+  name: Technical, Engineering and Thought Leadership
 - description: 100%
   icon: chart-line
   icon_pack: fas
@@ -28,11 +32,19 @@ feature:
   icon: triz
   icon_pack: custom
   name: Engineering R&D and Innovation
-- description: 90%
+- description: 100% 
+  icon: "engineering"
+  icon_pack: custom
+  name: Engineering Leadership
+- description: 100%
+  icon: triz
+  icon_pack: custom
+  name: Mentoring and Coaching
+- description: 100%
   icon: python
   icon_pack: fab
   name: Python
-- description: 60%
+- description: 70%
   icon: rust
   icon_pack: fab
   name: Rust

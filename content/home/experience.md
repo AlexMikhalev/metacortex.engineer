@@ -22,15 +22,35 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: Tech Lead/AI/ML Architect
+    company: Nationwide Building Society
+    company_url: 'https://nationwide.co.uk/'
+    company_logo: 'nationwide'
+    location: United Kingdom 
+    date_start: '2018-12-01'
+    date_end: ''
+    description: |2-
+       AI/ML architect, working closely with innovation and venturing team and data&analytics community. Specifically working on privacy preserving techniques for machine learning models, synthetic data and digital twins. 
+
+  - title: Head of Prototyping Engineering
+    company: Nationwide Building Society
+    company_url: 'https://nationwide.co.uk/'
+    company_logo: 'nationwide'
+    location: United Kingdom 
+    date_start: '2017-01-12'
+    date_end: '2018-01-12'
+    description: |2-
+       Enabled Prototyping Engineering capability inside Nationwide. Lead the team to create prototype of new infrastructure to build a digital distributed organisation - powered by blockchain and Machine Learning algorithms. We have invented and in patented the new type of distributed storage, which is complementary to existing cloud/on-prem infrastructure.  I also personally contributed to AI and Blockchain strategies.
+
   - title: Tech Lead
     company: Nationwide Building Society
     company_url: 'https://nationwide.co.uk/'
     company_logo: 'nationwide'
     location: United Kingdom 
-    date_start: '2021-01-01'
-    date_end: ''
+    date_start: '2014-01-12'
+    date_end: '2017-01-12'
     description: |2-
-        Tech lead working closely with Architecture and Engineering, specifically focused on data exploitation, AI and Machine Learning
+        Tech lead working closely with Architecture and Engineering, leading the team technical architects and systems designers delivering change across the building society in Digital, AML/Fraud, HR, Data and Analytics portfolios.
 
   - title: Head of Architecture and Development
     company: Shopitize Ltd
@@ -38,7 +58,7 @@ experience:
     date_start: '2011-11-01'
     date_end: '2014-12-01'
     description: |2-
-        Building large-scale innovative IT infrastructure. Supervising Software Architects and developers.
+        I have been the most senior technology professional in Shopitize my goal was to align business strategy with technology and product development. Building large-scale innovative IT infrastructure. Supervising Software Architects and developers. 
         
   - title: Research Fellow 
     company: Wireless Networks and Communication Group, Defense College of Management and Technology, Cranfield University, UK
