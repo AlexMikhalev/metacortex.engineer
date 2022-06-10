@@ -10,7 +10,7 @@ Scene: cheap hardwire assempled into robot with 3 mics separated 10 cm each. On 
 
 Simulation:
 
-.. code:: julia
+```julia
 
 	# Scene
 
@@ -59,14 +59,13 @@ Simulation:
 	TDOA2 = time_3 - time_1 + (sigma_time*randn());
 	TDOA3 = time_3 - time_2 + (sigma_time*randn());
 	TDOA4 = time_2 - time_3 + (sigma_time*randn());
-
+'''
 
 TDOA can be obtained using ROOT-MUSIC or cross-correlation techniques. In the past I saw XOR based TDOA estimator.
 
 Applying Hough Transform approach (non linear, non-parametric etc estimator) with principle "throw everything on the wall, see what sticks", very bruteforce, not julia-like example, but very robust algorithm.
 
-
-.. code:: julia
+```julia
 
    A_tdoa=zeros(x_max,y_max);
 
@@ -124,7 +123,7 @@ Applying Hough Transform approach (non linear, non-parametric etc estimator) wit
    (value_x,x_est)= findmax(maxp_value_x)
 
    rmse=sqrt((x_t-x_est)^2+(y_t-y_est)^2)
-
+```
 
 Out of one measurement I manage to get fairly good results - 30 cm, super precision!
 
