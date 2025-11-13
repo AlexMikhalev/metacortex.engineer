@@ -1,0 +1,90 @@
+name: Deploy Zola site to Cloudflare R2
+
+on:
+  push:
+    branches:
+      - claude/website-migration-research-011CV55NHr1a89N9HvP59cqf
+      - main
+      - master
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout repository with submodules
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      # Install Zola
+      - name: Install Zola
+        uses: taiki-e/install-action@v2
+        with:
+          tool: zola@0.19.1
+
+      # Build the Zola site
+      - name: Build Zola site
+        run: zola build
+
+      # Configure AWS CLI for R2 (S3-compatible)
+      - name: Configure R2 credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          aws-region: auto
+
+      # Deploy to Cloudflare R2
+      - name: Deploy to Cloudflare R2
+        env:
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          R2_BUCKET_NAME: ${{ secrets.R2_BUCKET_NAME }}
+        run: |
+          # R2 endpoint format: https://<account-id>.r2.cloudflarestorage.com
+          aws s3 sync public/ s3://$R2_BUCKET_NAME \
+            --endpoint-url https://${R2_ACCOUNT_ID}.r2.cloudflarestorage.com \
+            --delete \
+            --cache-control "public, max-age=31536000, immutable" \
+            --exclude "*.html" \
+            --exclude "*.xml" \
+            --exclude "*.txt"
+
+          # Upload HTML, XML, and TXT files with shorter cache
+          aws s3 sync public/ s3://$R2_BUCKET_NAME \
+            --endpoint-url https://${R2_ACCOUNT_ID}.r2.cloudflarestorage.com \
+            --delete \
+            --cache-control "public, max-age=3600" \
+            --exclude "*" \
+            --include "*.html" \
+            --include "*.xml" \
+            --include "*.txt" \
+            --content-type "text/html; charset=utf-8"
+
+      # Purge Cloudflare cache (optional but recommended)
+      - name: Purge Cloudflare Cache
+        env:
+          CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          if [ -n "$CLOUDFLARE_ZONE_ID" ] && [ -n "$CLOUDFLARE_API_TOKEN" ]; then
+            curl -X POST "https://api.cloudflare.com/client/v4/zones/${CLOUDFLARE_ZONE_ID}/purge_cache" \
+              -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
+              -H "Content-Type: application/json" \
+              --data '{"purge_everything":true}'
+            echo "✅ Cloudflare cache purged successfully"
+          else
+            echo "⚠️  Cloudflare credentials not set, skipping cache purge"
+          fi
+
+      - name: Deployment Summary
+        run: |
+          echo "🚀 Deployment Complete!"
+          echo "📦 Bucket: ${{ secrets.R2_BUCKET_NAME }}"
+          echo "🌐 Site: https://metacortex.engineer"
+          echo "⏰ Deployed at: $(date)"
