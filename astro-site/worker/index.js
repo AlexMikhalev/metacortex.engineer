@@ -15,9 +15,9 @@ export default {
       object = await env.BUCKET.get(key + "/index.html");
     }
 
-    if (!object && !key.endsWith(".html")) {
+    if (!object && key.includes("/") && !key.endsWith(".html")) {
       const parent = key.substring(0, key.lastIndexOf("/") + 1);
-      object = await env.BUCKET.get(parent + "index.html");
+      if (parent) object = await env.BUCKET.get(parent + "index.html");
     }
 
     if (!object) {
