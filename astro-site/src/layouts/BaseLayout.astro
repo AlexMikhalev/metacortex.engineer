@@ -2,9 +2,12 @@
 export interface Props {
   title: string;
   description?: string;
+  image?: string;
 }
 
-const { title, description = 'Dr Alexander Mikhalev - AI Architect, Machine Learning & Systems Engineering' } = Astro.props;
+const { title, description = 'Dr Alexander Mikhalev - AI Architect, Machine Learning & Systems Engineering', image = '/favicon.svg' } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const fullImage = new URL(image, Astro.site).href;
 ---
 <!doctype html>
 <html lang="en">
@@ -14,8 +17,18 @@ const { title, description = 'Dr Alexander Mikhalev - AI Architect, Machine Lear
     <meta name="description" content={description} />
     <title>{title}</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="canonical" href={Astro.url.href} />
+    <link rel="canonical" href={canonicalURL.href} />
     <meta name="generator" content={Astro.generator} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL.href} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={fullImage} />
+    <meta property="og:site_name" content="Metacortex Engineer" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={fullImage} />
     <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-J7D112V28F"></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
