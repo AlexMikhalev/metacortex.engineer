@@ -15,11 +15,6 @@ export default {
       object = await env.BUCKET.get(key + "/index.html");
     }
 
-    if (!object && key.includes("/") && !key.endsWith(".html")) {
-      const parent = key.substring(0, key.lastIndexOf("/") + 1);
-      if (parent) object = await env.BUCKET.get(parent + "index.html");
-    }
-
     if (!object) {
       return new Response("Not Found", { status: 404 });
     }
