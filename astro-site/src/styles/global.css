@@ -326,6 +326,15 @@ section {
     font-weight: 600;
 }
 
+.project-title a {
+    color: var(--primary-dark);
+    text-decoration: none;
+}
+
+.project-title a:hover {
+    color: var(--primary-gray);
+}
+
 .project-description {
     color: var(--primary-gray);
     margin-bottom: 1rem;
