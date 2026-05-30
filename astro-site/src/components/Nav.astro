@@ -17,6 +17,11 @@ const logoTriangles = [
       </div>
       METACORTEX
     </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
     <ul class="nav-links">
       {navigation.map((item) => (
         <li><a href={item.href}>{item.name}</a></li>
@@ -24,3 +29,22 @@ const logoTriangles = [
     </ul>
   </div>
 </nav>
+<script is:inline>
+  (function(){
+    var btn = document.querySelector('.nav-toggle');
+    var menu = document.querySelector('.nav-links');
+    if (!btn || !menu) return;
+    btn.addEventListener('click', function(){
+      var open = menu.classList.toggle('nav-open');
+      btn.classList.toggle('nav-open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    menu.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        menu.classList.remove('nav-open');
+        btn.classList.remove('nav-open');
+        btn.setAttribute('aria-expanded', 'false');
+      });
+    });
+  })();
+</script>
