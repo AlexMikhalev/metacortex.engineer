@@ -30,34 +30,44 @@ jobs:
         working-directory: astro-site
         run: bun run build
 
-      - name: Configure R2 credentials
-        uses: aws-actions/configure-aws-credentials@v4
-        with:
-          aws-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY }}
-          aws-region: auto
+      - name: Setup Wrangler
+        run: npm install -g wrangler
 
-      - name: Deploy to Cloudflare R2
+      - name: Deploy static assets to R2
         env:
-          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
-          R2_BUCKET_NAME: ${{ secrets.R2_BUCKET_NAME }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         run: |
-          aws s3 sync astro-site/dist/ s3://$R2_BUCKET_NAME \
-            --endpoint-url https://${R2_ACCOUNT_ID}.r2.cloudflarestorage.com \
-            --delete \
-            --cache-control "public, max-age=31536000, immutable" \
-            --exclude "*.html" \
-            --exclude "*.xml" \
-            --exclude "*.txt"
+          cd astro-site/dist
+          find . -type f | while read -r file; do
+            key="${file#./}"
+            content_type=""
+            case "$key" in
+              *.html) content_type="text/html; charset=utf-8" ;;
+              *.css) content_type="text/css; charset=utf-8" ;;
+              *.js) content_type="application/javascript" ;;
+              *.json) content_type="application/json" ;;
+              *.xml) content_type="application/xml" ;;
+              *.svg) content_type="image/svg+xml" ;;
+              *.png) content_type="image/png" ;;
+              *.jpg|*.jpeg) content_type="image/jpeg" ;;
+              *.gif) content_type="image/gif" ;;
+              *.ico) content_type="image/x-icon" ;;
+              *.webp) content_type="image/webp" ;;
+              *.woff) content_type="font/woff" ;;
+              *.woff2) content_type="font/woff2" ;;
+              *.ttf) content_type="font/ttf" ;;
+              *.pdf) content_type="application/pdf" ;;
+              *.txt) content_type="text/plain" ;;
+            esac
 
-          aws s3 sync astro-site/dist/ s3://$R2_BUCKET_NAME \
-            --endpoint-url https://${R2_ACCOUNT_ID}.r2.cloudflarestorage.com \
-            --delete \
-            --cache-control "public, max-age=3600" \
-            --exclude "*" \
-            --include "*.html" \
-            --include "*.xml" \
-            --include "*.txt"
+            if [ -n "$content_type" ]; then
+              wrangler r2 object put metacortex-engineer/"$key" --file "$file" --content-type "$content_type" --remote 2>/dev/null
+            else
+              wrangler r2 object put metacortex-engineer/"$key" --file "$file" --remote 2>/dev/null
+            fi
+            echo "Uploaded: $key"
+          done
 
       - name: Purge Cloudflare Cache
         env:
@@ -74,5 +84,4 @@ jobs:
       - name: Deployment Summary
         run: |
           echo "Deployment Complete"
-          echo "Bucket: ${{ secrets.R2_BUCKET_NAME }}"
           echo "Site: https://metacortex.engineer"
