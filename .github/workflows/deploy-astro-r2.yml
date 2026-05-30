@@ -1,0 +1,78 @@
+name: Deploy Astro site to Cloudflare R2
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        working-directory: astro-site
+        run: bun install
+
+      - name: Build Astro site
+        working-directory: astro-site
+        run: bun run build
+
+      - name: Configure R2 credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          aws-region: auto
+
+      - name: Deploy to Cloudflare R2
+        env:
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          R2_BUCKET_NAME: ${{ secrets.R2_BUCKET_NAME }}
+        run: |
+          aws s3 sync astro-site/dist/ s3://$R2_BUCKET_NAME \
+            --endpoint-url https://${R2_ACCOUNT_ID}.r2.cloudflarestorage.com \
+            --delete \
+            --cache-control "public, max-age=31536000, immutable" \
+            --exclude "*.html" \
+            --exclude "*.xml" \
+            --exclude "*.txt"
+
+          aws s3 sync astro-site/dist/ s3://$R2_BUCKET_NAME \
+            --endpoint-url https://${R2_ACCOUNT_ID}.r2.cloudflarestorage.com \
+            --delete \
+            --cache-control "public, max-age=3600" \
+            --exclude "*" \
+            --include "*.html" \
+            --include "*.xml" \
+            --include "*.txt"
+
+      - name: Purge Cloudflare Cache
+        env:
+          CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          if [ -n "$CLOUDFLARE_ZONE_ID" ] && [ -n "$CLOUDFLARE_API_TOKEN" ]; then
+            curl -X POST "https://api.cloudflare.com/client/v4/zones/${CLOUDFLARE_ZONE_ID}/purge_cache" \
+              -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
+              -H "Content-Type: application/json" \
+              --data '{"purge_everything":true}'
+          fi
+
+      - name: Deployment Summary
+        run: |
+          echo "Deployment Complete"
+          echo "Bucket: ${{ secrets.R2_BUCKET_NAME }}"
+          echo "Site: https://metacortex.engineer"

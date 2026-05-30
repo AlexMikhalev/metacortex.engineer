@@ -1,0 +1,18 @@
+---
+import ExperienceItem from './ExperienceItem.astro';
+import experienceData from '../data/experience.json';
+---
+<section id="experience">
+  <h2 class="section-title">Key Achievements</h2>
+  <div class="experience-timeline">
+    {experienceData.map((exp) => (
+      <ExperienceItem
+        title={exp.title}
+        company={exp.company}
+        date_start={exp.date_start}
+        date_end={exp.date_end}
+        description={exp.description}
+      />
+    ))}
+  </div>
+</section>

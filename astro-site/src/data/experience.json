@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Tech Lead / AI/ML Architect",
+    "company": "Nationwide Building Society",
+    "company_url": "https://nationwide.co.uk/",
+    "location": "United Kingdom",
+    "date_start": "2018-12-01",
+    "date_end": "",
+    "description": "AI/ML architect, working closely with innovation and venturing team and data & analytics community. Working on privacy-preserving techniques for machine learning models, synthetic data and digital twins."
+  },
+  {
+    "title": "Head of Prototyping Engineering",
+    "company": "Nationwide Building Society",
+    "company_url": "https://nationwide.co.uk/",
+    "location": "United Kingdom",
+    "date_start": "2017-01-12",
+    "date_end": "2018-01-12",
+    "description": "Enabled Prototyping Engineering capability inside Nationwide. Led the team to create a prototype of new infrastructure to build a digital distributed organisation - powered by blockchain and Machine Learning algorithms. Invented and patented a new type of distributed storage, complementary to existing cloud/on-prem infrastructure."
+  },
+  {
+    "title": "Tech Lead",
+    "company": "Nationwide Building Society",
+    "company_url": "https://nationwide.co.uk/",
+    "location": "United Kingdom",
+    "date_start": "2014-01-12",
+    "date_end": "2017-01-12",
+    "description": "Tech lead working closely with Architecture and Engineering, leading the team of technical architects and systems designers delivering change across the building society in Digital, AML/Fraud, HR, Data and Analytics portfolios."
+  },
+  {
+    "title": "Head of Architecture and Development",
+    "company": "Shopitize Ltd",
+    "company_url": "",
+    "location": "London, United Kingdom",
+    "date_start": "2011-11-01",
+    "date_end": "2014-12-01",
+    "description": "Most senior technology professional, aligning business strategy with technology and product development. Building large-scale innovative IT infrastructure. Supervising Software Architects and developers."
+  },
+  {
+    "title": "Research Fellow",
+    "company": "Wireless Networks and Communication Group, Cranfield University",
+    "company_url": "https://www.cranfield.ac.uk/themes/defence-and-security",
+    "location": "Shrivenham, United Kingdom",
+    "date_start": "2007-05-01",
+    "date_end": "2009-12-31",
+    "description": "Development of new methods for wireless and wired communications, novel sensor networks and data fusion for in-vehicle sensor networks funded by IVHM consortium led by Rolls Royce and Boeing."
+  },
+  {
+    "title": "IT/IS Executive",
+    "company": "Microsharp Corporation Limited",
+    "company_url": "",
+    "location": "Shrivenham, United Kingdom",
+    "date_start": "2003-02-01",
+    "date_end": "2007-05-01",
+    "description": "Design, development and testing of IT and phone infrastructure, created fully automated and redundant IT infrastructure."
+  },
+  {
+    "title": "Co-founder and Editor-in-chief",
+    "company": "System Administrator magazine (samag.ru)",
+    "company_url": "",
+    "location": "Moscow, Russia",
+    "date_start": "2002-02-01",
+    "date_end": "2003-02-17",
+    "description": "Responsible for developing and controlling the publishing process. Management of a small team (5-8 employees) ensuring timely delivery to the printer."
+  }
+]

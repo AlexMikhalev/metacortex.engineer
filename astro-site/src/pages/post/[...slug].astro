@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+import '../../styles/global.css';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('post');
+  return posts.map(post => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+
+const formattedDate = post.data.date.toLocaleDateString('en-GB', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+
+const tags = Array.isArray(post.data.tags) ? post.data.tags : [];
+---
+<BaseLayout title={`${post.data.title} | Metacortex Engineer`} description={post.data.description || post.data.subtitle}>
+  <Nav />
+  <article class="blog-post">
+    <a href="/post/" class="back-link">&larr; Back to Blog</a>
+    <h1>{post.data.title}</h1>
+    <p class="post-meta">
+      {formattedDate}
+      {post.data.author && ` | ${post.data.author}`}
+    </p>
+    <div class="post-content">
+      <Content />
+    </div>
+    {tags.length > 0 && (
+      <div class="tags">
+        {tags.map(tag => (
+          <span class="tech-tag">{tag}</span>
+        ))}
+      </div>
+    )}
+  </article>
+  <Footer />
+</BaseLayout>

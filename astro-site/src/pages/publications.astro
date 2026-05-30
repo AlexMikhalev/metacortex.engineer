@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+---
+<BaseLayout title="Publications | Metacortex Engineer" description="Publications by Dr Alexander Mikhalev.">
+  <Nav />
+  <div style="margin-top: 80px; padding: 2rem; max-width: 1200px; margin-left: auto; margin-right: auto;">
+    <h1 class="section-title">Publications</h1>
+    <div class="experience-timeline">
+      <div class="experience-item">
+        <h3 class="experience-title">Best Student Paper Award</h3>
+        <p class="experience-company">International Conference on Information Sciences, Signal Processing and its Applications | 2007</p>
+        <p class="experience-description">
+          Awarded for research on "Emitter Geolocation using fusion of TDOA Data with a Particle Filter".
+        </p>
+      </div>
+      <div class="experience-item">
+        <h3 class="experience-title">Technology Patent</h3>
+        <p class="experience-company">2018</p>
+        <p class="experience-description">
+          Led team to develop a blockchain-inspired distributed system, resulting in a technology patent for a new type of distributed storage.
+        </p>
+      </div>
+    </div>
+  </div>
+  <Footer />
+</BaseLayout>

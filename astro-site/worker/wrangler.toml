@@ -1,0 +1,11 @@
+name = "metacortex-router"
+main = "index.js"
+compatibility_date = "2024-12-24"
+
+[[routes]]
+pattern = "metacortex.engineer/*"
+zone_name = "metacortex.engineer"
+
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "metacortex-engineer"

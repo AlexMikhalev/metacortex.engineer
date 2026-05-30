@@ -1,0 +1,16 @@
+{
+  "name": "Dr Alexander Mikhalev",
+  "role": "AI/ML Architect",
+  "tagline": "Technology Leader & Innovation Architect",
+  "bio": "Systems thinker with a deep understanding of technology and a methodological approach to innovation. Over 20 years of experience in engineering, academic, and leadership positions. Pioneering the convergence of AI, ethics, systems engineering, and enterprise architecture to solve complex real-world challenges.",
+  "avatar": "/img/avatar.jpg",
+  "organisations": [
+    { "name": "Nationwide Building Society", "url": "https://www.nationwide.co.uk/" },
+    { "name": "Applied Knowledge Systems", "url": "https://github.com/applied-knowledge-systems" }
+  ],
+  "education": [
+    { "course": "PhD in Applied Mathematics", "institution": "Cranfield University UK", "year": 2010 },
+    { "course": "MSc (Engineer) in Information Systems and Computer Science", "institution": "Moscow State Technical University n/a Bauman (MSTU), Russia", "year": 2002 }
+  ],
+  "email": "alex@metacortex.engineer"
+}

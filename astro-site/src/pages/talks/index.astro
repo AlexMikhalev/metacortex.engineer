@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+import '../../styles/global.css';
+
+const events = (await getCollection('event'))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+<BaseLayout title="Talks | Metacortex Engineer" description="Conference talks and presentations by Dr Alexander Mikhalev.">
+  <Nav />
+  <div style="margin-top: 80px; padding: 2rem; max-width: 1200px; margin-left: auto; margin-right: auto;">
+    <h1 class="section-title">Talks & Presentations</h1>
+    <div class="experience-timeline">
+      {events.map(event => {
+        const formattedDate = event.data.date.toLocaleDateString('en-GB', {
+          month: 'long',
+          year: 'numeric',
+        });
+        return (
+          <div class="experience-item">
+            <h3 class="experience-title">{event.data.title}</h3>
+            <p class="experience-company">{event.data.event} | {formattedDate} | {event.data.location}</p>
+            {event.data.abstract && <p class="experience-description">{event.data.abstract}</p>}
+            {event.data.url_video && (
+              <p style="margin-top: 0.5rem;">
+                <a href={event.data.url_video} target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.8rem;">
+                  Watch
+                </a>
+              </p>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  </div>
+  <Footer />
+</BaseLayout>

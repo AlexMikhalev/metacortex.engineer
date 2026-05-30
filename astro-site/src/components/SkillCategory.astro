@@ -1,0 +1,23 @@
+---
+interface Props {
+  category: string;
+  skills: Array<{ name: string; level: number }>;
+}
+
+const { category, skills } = Astro.props;
+---
+<div class="skill-category">
+  <h3>{category}</h3>
+  <ul class="skill-list">
+    {skills.map((skill) => (
+      <li>
+        <span>{skill.name}</span>
+        <div class="skill-level">
+          {Array.from({ length: 5 }, (_, i) => (
+            <div class={`level-dot ${i < skill.level ? 'active' : ''}`}></div>
+          ))}
+        </div>
+      </li>
+    ))}
+  </ul>
+</div>

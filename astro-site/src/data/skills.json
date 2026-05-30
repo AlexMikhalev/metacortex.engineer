@@ -1,0 +1,38 @@
+[
+  {
+    "category": "AI & Data Science",
+    "skills": [
+      { "name": "Natural Language Processing", "level": 5 },
+      { "name": "Machine Learning", "level": 5 },
+      { "name": "Knowledge Graphs", "level": 5 },
+      { "name": "Deep Learning (BERT, T5)", "level": 4 }
+    ]
+  },
+  {
+    "category": "Systems & Infrastructure",
+    "skills": [
+      { "name": "Distributed Systems", "level": 5 },
+      { "name": "Redis Ecosystem", "level": 5 },
+      { "name": "Enterprise Architecture", "level": 4 },
+      { "name": "Cyber-Physical Systems", "level": 4 }
+    ]
+  },
+  {
+    "category": "Languages & Tools",
+    "skills": [
+      { "name": "Python", "level": 5 },
+      { "name": "Rust", "level": 4 },
+      { "name": "Graph Databases", "level": 5 },
+      { "name": "VR/AR Development", "level": 4 }
+    ]
+  },
+  {
+    "category": "Specialisations",
+    "skills": [
+      { "name": "Data Privacy & Security", "level": 5 },
+      { "name": "Synthetic Data", "level": 4 },
+      { "name": "AI Ethics", "level": 4 },
+      { "name": "Sensor Networks", "level": 4 }
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+---
+interface Props {
+  title: string;
+  company: string;
+  date_start: string;
+  date_end: string;
+  description: string;
+}
+
+const { title, company, date_start, date_end, description } = Astro.props;
+
+function formatDate(dateStr: string): string {
+  const d = new Date(dateStr);
+  return d.toLocaleDateString('en-GB', { month: 'short', year: 'numeric' });
+}
+
+const period = date_end
+  ? `${formatDate(date_start)} - ${formatDate(date_end)}`
+  : `${formatDate(date_start)} - Present`;
+---
+<div class="experience-item">
+  <h3 class="experience-title">{title}</h3>
+  <p class="experience-company">{company} | {period}</p>
+  <p class="experience-description">{description}</p>
+</div>

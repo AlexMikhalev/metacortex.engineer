@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+import '../../styles/global.css';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('project');
+  return projects.map(project => ({
+    params: { slug: project.slug },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+const { Content } = await project.render();
+
+const formattedDate = project.data.date.toLocaleDateString('en-GB', {
+  month: 'long',
+  year: 'numeric',
+});
+
+const tags = Array.isArray(project.data.tags) ? project.data.tags : [];
+---
+<BaseLayout title={`${project.data.title} | Metacortex Engineer`} description={project.data.summary}>
+  <Nav />
+  <article class="blog-post">
+    <a href="/#projects" class="back-link">&larr; Back to Projects</a>
+    <h1>{project.data.title}</h1>
+    <p class="post-meta">{formattedDate}</p>
+    {project.data.url_code && (
+      <p><a href={project.data.url_code} target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="margin-bottom: 1rem;">View Code</a></p>
+    )}
+    <div class="post-content">
+      <Content />
+    </div>
+    {tags.length > 0 && (
+      <div class="tags" style="margin-top: 2rem;">
+        {tags.map(tag => (
+          <span class="tech-tag">{tag}</span>
+        ))}
+      </div>
+    )}
+  </article>
+  <Footer />
+</BaseLayout>

@@ -1,0 +1,26 @@
+---
+import navigation from '../data/navigation.json';
+
+const logoTriangles = [
+  { className: 'triangle-1' },
+  { className: 'triangle-2' },
+  { className: 'triangle-3' },
+];
+---
+<nav>
+  <div class="nav-container">
+    <a href="/" class="logo">
+      <div class="logo-icon">
+        {logoTriangles.map((t) => (
+          <div class={`triangle ${t.className}`}></div>
+        ))}
+      </div>
+      METACORTEX
+    </a>
+    <ul class="nav-links">
+      {navigation.map((item) => (
+        <li><a href={item.href}>{item.name}</a></li>
+      ))}
+    </ul>
+  </div>
+</nav>

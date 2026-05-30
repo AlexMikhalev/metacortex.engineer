@@ -1,0 +1,17 @@
+---
+import author from '../data/author.json';
+---
+<section class="hero" id="about">
+  <div class="hero-bg">
+    <div class="grid-pattern"></div>
+  </div>
+  <div class="hero-content">
+    <h1>{author.name}</h1>
+    <p class="subtitle">{author.tagline}</p>
+    <p class="description">{author.bio}</p>
+    <div class="cta-buttons">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="https://www.linkedin.com/in/alexmikhalev/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">LinkedIn Profile</a>
+    </div>
+  </div>
+</section>

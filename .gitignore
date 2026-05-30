@@ -9,3 +9,12 @@ node_modules/
 
 # Local Netlify folder
 .netlify
+
+# Astro
+astro-site/node_modules/
+astro-site/dist/
+astro-site/.astro/
+
+# Wrangler
+.wrangler/
+.dev.vars
