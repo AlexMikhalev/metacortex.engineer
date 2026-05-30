@@ -2,12 +2,13 @@
 interface Props {
   title: string;
   company: string;
+  company_url?: string;
   date_start: string;
   date_end: string;
   description: string;
 }
 
-const { title, company, date_start, date_end, description } = Astro.props;
+const { title, company, company_url, date_start, date_end, description } = Astro.props;
 
 function formatDate(dateStr: string): string {
   const d = new Date(dateStr);
@@ -20,6 +21,6 @@ const period = date_end
 ---
 <div class="experience-item">
   <h3 class="experience-title">{title}</h3>
-  <p class="experience-company">{company} | {period}</p>
+  <p class="experience-company">{company_url ? <a href={company_url} target="_blank" rel="noopener noreferrer">{company}</a> : company} | {period}</p>
   <p class="experience-description">{description}</p>
 </div>

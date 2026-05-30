@@ -444,7 +444,17 @@ section {
 
 .experience-company {
     color: var(--primary-gray);
+    font-size: 0.95rem;
     margin-bottom: 0.5rem;
+}
+
+.experience-company a {
+    color: var(--primary-gray);
+    text-decoration: none;
+}
+
+.experience-company a:hover {
+    color: var(--primary-dark);
 }
 
 .experience-description {

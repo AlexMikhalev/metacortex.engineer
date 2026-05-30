@@ -1,10 +1,11 @@
 {
   "name": "Dr Alexander Mikhalev",
-  "role": "AI/ML Architect",
-  "tagline": "Technology Leader & Innovation Architect",
-  "bio": "Systems thinker with a deep understanding of technology and a methodological approach to innovation. Over 20 years of experience in engineering, academic, and leadership positions. Pioneering the convergence of AI, ethics, systems engineering, and enterprise architecture to solve complex real-world challenges.",
+  "role": "CTO & Head of AI, Zestic AI",
+  "tagline": "An experienced technical leader and innovator with a focus on data, engineering, AI and ML",
+  "bio": "An experienced technical leader and innovator with a focus on data, engineering, AI and ML. Capable of taking innovation from idea to production by building a complete platform with a whole lifecycle and corresponding organisation. Deep knowledge in AI/ML, data privacy, synthetic data, distributed data, natural language processing, search engines, sensors, and wired/wireless networks. Key positions include AI lead architect at Nationwide, UK Ministry of Defence, and CTO & Head of AI at Zestic AI.",
   "avatar": "/img/avatar.jpg",
   "organisations": [
+    { "name": "Zestic AI", "url": "https://zestic.ai" },
     { "name": "Nationwide Building Society", "url": "https://www.nationwide.co.uk/" },
     { "name": "Applied Knowledge Systems", "url": "https://github.com/applied-knowledge-systems" }
   ],

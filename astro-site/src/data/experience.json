@@ -1,11 +1,20 @@
 [
   {
+    "title": "CTO & Head of AI",
+    "company": "Zestic AI",
+    "company_url": "https://zestic.ai",
+    "location": "United Kingdom",
+    "date_start": "2023-09-01",
+    "date_end": "",
+    "description": "AI-native consultancy architecting intelligent systems for private equity and scaling companies. Leading the AI Dark Factory infrastructure, Zestic Development Process (6D lifecycle), and delivery of AI-native platforms across finance, fintech, healthcare and industrials."
+  },
+  {
     "title": "Tech Lead / AI/ML Architect",
     "company": "Nationwide Building Society",
     "company_url": "https://nationwide.co.uk/",
     "location": "United Kingdom",
     "date_start": "2018-12-01",
-    "date_end": "",
+    "date_end": "2023-09-01",
     "description": "AI/ML architect, working closely with innovation and venturing team and data & analytics community. Working on privacy-preserving techniques for machine learning models, synthetic data and digital twins."
   },
   {
@@ -37,12 +46,12 @@
   },
   {
     "title": "Research Fellow",
-    "company": "Wireless Networks and Communication Group, Cranfield University",
+    "company": "Cranfield University / UK Ministry of Defence",
     "company_url": "https://www.cranfield.ac.uk/themes/defence-and-security",
     "location": "Shrivenham, United Kingdom",
     "date_start": "2007-05-01",
     "date_end": "2009-12-31",
-    "description": "Development of new methods for wireless and wired communications, novel sensor networks and data fusion for in-vehicle sensor networks funded by IVHM consortium led by Rolls Royce and Boeing."
+    "description": "Development of new methods for wireless and wired communications, novel sensor networks and data fusion for in-vehicle sensor networks funded by IVHM consortium led by Rolls Royce and Boeing. Research conducted at the Defence Academy of the United Kingdom."
   },
   {
     "title": "IT/IS Executive",
