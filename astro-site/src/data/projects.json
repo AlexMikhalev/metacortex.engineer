@@ -41,6 +41,7 @@
     "title": "TruthForge",
     "description": "Bias detection and narrative intelligence platform for responsible AI validation. Debate arena for multi-perspective analysis with structured verdict framework.",
     "tags": ["AI Ethics", "Bias Detection", "Responsible AI"],
+    "url": "https://truthforge.ai/",
     "image": "/img/projects/truthforge.svg"
   }
 ]
