@@ -1,0 +1,36 @@
+# metacortex.engineer
+
+> Dr Alexander Mikhalev - Technology Leader & Innovation Architect
+
+## About
+
+Systems thinker with 20+ years in engineering, academic, and leadership positions. Pioneering the convergence of AI, ethics, systems engineering, and enterprise architecture.
+
+## Core Projects
+
+- **Terraphim AI** (https://terraphim.ai) - Privacy-first deterministic AI assistant built with Rust. Knowledge graph learning systems, Aho-Corasick text matching, multi-agent orchestration, MCP server integration.
+- **The Pattern** (https://github.com/applied-knowledge-systems/the-pattern) - Machine Learning NLP pipeline for knowledge discovery using Redis ecosystem with VR/AR interfaces.
+- **TruthForge** - Bias detection and narrative intelligence platform for responsible AI validation.
+
+## Skills
+
+- AI & Data Science: NLP, Machine Learning, Knowledge Graphs, Deep Learning
+- Systems: Distributed Systems, Redis, Enterprise Architecture, Cyber-Physical Systems
+- Languages: Python, Rust, Graph Databases, VR/AR Development
+- Specialisations: Data Privacy, Synthetic Data, AI Ethics, Sensor Networks
+
+## Content
+
+- Blog: https://metacortex.engineer/post/ - Articles on AI, NLP, Redis, knowledge graphs, systems engineering
+- Talks: https://metacortex.engineer/talks/ - Conference presentations (EuroPython, RedisConf, INCOSE)
+- Publications: https://metacortex.engineer/publications - Patent and academic publications
+
+## Technical Stack
+
+This site is built with Astro 5.x, deployed on Cloudflare R2 via a Worker router. No frameworks, vanilla CSS only.
+
+## Contact
+
+- LinkedIn: https://www.linkedin.com/in/alexmikhalev/
+- GitHub: https://github.com/AlexMikhalev
+- Blog: https://www.sci-blog.com

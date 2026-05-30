@@ -1,0 +1,14 @@
+/* TEAM */
+Name: Dr Alexander Mikhalev
+Site: https://metacortex.engineer
+LinkedIn: https://www.linkedin.com/in/alexmikhalev/
+GitHub: https://github.com/AlexMikhalev
+Location: United Kingdom
+
+/* SITE */
+Last update: 2026-05-30
+Language: English
+Standards: HTML5, CSS3
+Framework: Astro 5.x
+Hosting: Cloudflare R2 + Workers
+Software: Vanilla CSS, no JS frameworks

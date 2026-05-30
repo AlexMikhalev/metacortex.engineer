@@ -3,37 +3,44 @@
     "title": "Terraphim AI",
     "description": "Privacy-first, deterministic AI assistant built with Rust. 56-crate workspace featuring knowledge graph learning systems, Aho-Corasick text matching, multi-agent orchestration, and MCP server integration. Operates entirely on local infrastructure.",
     "tags": ["Rust", "AI", "Knowledge Graphs", "MCP"],
-    "url": "https://github.com/AlexMikhalev"
+    "url": "https://terraphim.ai",
+    "image": "/img/projects/terraphim-ai.svg"
   },
   {
     "title": "The Pattern",
     "description": "Machine Learning NLP pipeline for knowledge discovery using Redis ecosystem. Combines VR/AR interfaces with AI to fight information complexity and enable spatial information exploration.",
     "tags": ["Redis", "NLP", "Python", "VR/AR"],
-    "url": "https://github.com/applied-knowledge-systems/the-pattern"
+    "url": "https://github.com/applied-knowledge-systems/the-pattern",
+    "image": "/img/projects/the-pattern.svg"
   },
   {
     "title": "Blockchain-Inspired Distributed System",
     "description": "Led team to build innovative distributed system resulting in a technology patent. Demonstrated systematic approach to innovation and ability to inspire teams to achieve breakthrough results.",
-    "tags": ["Distributed", "Blockchain", "Patent"]
+    "tags": ["Distributed", "Blockchain", "Patent"],
+    "image": "/img/projects/blockchain.svg"
   },
   {
     "title": "Loan Management Platform",
     "description": "Full-stack loan management platform with Rust/WASM financial calculations, borrower portal, CRM integration, and immutable audit trails. Eight microservices with event-driven architecture.",
-    "tags": ["Rust", "WASM", "Fintech", "Microservices"]
+    "tags": ["Rust", "WASM", "Fintech", "Microservices"],
+    "image": "/img/projects/loan-platform.svg"
   },
   {
     "title": "Digital Synthetic Twins",
     "description": "Rust-based platform providing high-fidelity mock implementations of third-party APIs for offline development, deterministic testing, and cost-free experimentation. Drop-in compatible with official SDKs.",
-    "tags": ["Rust", "API", "Testing", "Axum"]
+    "tags": ["Rust", "API", "Testing", "Axum"],
+    "image": "/img/projects/synthetic-twins.svg"
   },
   {
     "title": "Signal Intelligence Service Layer",
     "description": "Service layer migration integrating AI capabilities with existing signal intelligence infrastructure. Bedrock integration with automated deployment pipeline.",
-    "tags": ["AI", "Migration", "Service Layer"]
+    "tags": ["AI", "Migration", "Service Layer"],
+    "image": "/img/projects/signal-intel.svg"
   },
   {
     "title": "TruthForge",
     "description": "Bias detection and narrative intelligence platform for responsible AI validation. Debate arena for multi-perspective analysis with structured verdict framework.",
-    "tags": ["AI Ethics", "Bias Detection", "Responsible AI"]
+    "tags": ["AI Ethics", "Bias Detection", "Responsible AI"],
+    "image": "/img/projects/truthforge.svg"
   }
 ]

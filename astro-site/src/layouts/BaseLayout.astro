@@ -29,6 +29,20 @@ const fullImage = new URL(image, Astro.site).href;
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={fullImage} />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Dr Alexander Mikhalev",
+      "url": "https://metacortex.engineer",
+      "jobTitle": "Technology Leader & Innovation Architect",
+      "description": description,
+      "sameAs": [
+        "https://www.linkedin.com/in/alexmikhalev/",
+        "https://github.com/AlexMikhalev",
+        "https://www.sci-blog.com"
+      ],
+      "knowsAbout": ["AI", "Machine Learning", "NLP", "Knowledge Graphs", "Rust", "Systems Engineering", "Enterprise Architecture"]
+    })} />
     <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-J7D112V28F"></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
