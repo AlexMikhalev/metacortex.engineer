@@ -43,5 +43,26 @@
     "tags": ["AI Ethics", "Bias Detection", "Responsible AI"],
     "url": "https://truthforge.ai/",
     "image": "/img/projects/truthforge.svg"
+  },
+  {
+    "title": "Terraphim AgentForge",
+    "description": "Gitea fork extended with PageRank-based issue prioritisation, an MCP server for agent coordination, and a dedicated Robot API. A code forge designed for the era where AI agents write code alongside humans.",
+    "tags": ["Gitea", "PageRank", "MCP", "DevOps"],
+    "url": "https://git.terraphim.cloud",
+    "image": "/img/projects/agentforge.svg"
+  },
+  {
+    "title": "Terraphim Skills",
+    "description": "42 production-grade skills for AI coding assistants. Disciplined engineering, Rust performance, DevOps and agent orchestration skills, cryptographically signed and installable with one command. Compatible with Claude Code, Cursor, Codex, and OpenCode.",
+    "tags": ["Skills", "AI Agents", "Rust", "Open Source"],
+    "url": "https://github.com/terraphim/terraphim-skills",
+    "image": "/img/projects/skills.svg"
+  },
+  {
+    "title": "Time Agent",
+    "description": "AI-native time tracking via CLI. Login, create projects and tasks, start and stop timers, log time with natural language, generate reports, sync to cloud. Local-first with zero config. Rust core with Cloudflare Workers API, Tauri desktop app, and MCP server.",
+    "tags": ["Rust", "CLI", "Cloudflare", "Tauri"],
+    "url": "https://github.com/terraphim/time-agent",
+    "image": "/img/projects/time-agent.svg"
   }
 ]

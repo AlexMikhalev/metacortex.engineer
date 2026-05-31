@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+  <rect width="400" height="250" rx="8" fill="#1a1a2e"/>
+  <g transform="translate(200,100)">
+    <polygon points="0,-35 30,20 -30,20" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+    <circle cx="0" cy="5" r="8" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
+    <line x1="-4" y1="5" x2="0" y2="-2" stroke="#f59e0b" stroke-width="1.5"/>
+    <line x1="0" y1="-2" x2="4" y2="5" stroke="#f59e0b" stroke-width="1.5"/>
+    <circle cx="0" cy="5" r="1.5" fill="#f59e0b"/>
+  </g>
+  <text x="200" y="160" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#e5e5e5">AgentForge</text>
+  <text x="200" y="180" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#a3a3a3">Gitea + PageRank + Robot API</text>
+  <g transform="translate(80,210)">
+    <circle cx="0" cy="0" r="4" fill="#f59e0b" opacity="0.6"/>
+    <line x1="4" y1="0" x2="40" y2="-5" stroke="#f59e0b" stroke-width="0.5" opacity="0.3"/>
+    <circle cx="44" cy="-5" r="4" fill="#f59e0b" opacity="0.6"/>
+    <line x1="48" y1="-5" x2="80" y2="3" stroke="#f59e0b" stroke-width="0.5" opacity="0.3"/>
+    <circle cx="84" cy="3" r="4" fill="#f59e0b" opacity="0.6"/>
+    <line x1="88" y1="3" x2="130" y2="-3" stroke="#f59e0b" stroke-width="0.5" opacity="0.3"/>
+    <circle cx="134" cy="-3" r="4" fill="#f59e0b" opacity="0.6"/>
+    <line x1="138" y1="-3" x2="180" y2="5" stroke="#f59e0b" stroke-width="0.5" opacity="0.3"/>
+    <circle cx="184" cy="5" r="4" fill="#f59e0b" opacity="0.6"/>
+    <line x1="188" y1="5" x2="230" y2="-2" stroke="#f59e0b" stroke-width="0.5" opacity="0.3"/>
+    <circle cx="234" cy="-2" r="4" fill="#f59e0b" opacity="0.6"/>
+  </g>
+</svg>
