@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import CompetitionCard from '../../components/CompetitionCard.astro';
+import competitions from '../../data/competitions.json';
+import '../../styles/global.css';
+---
+<BaseLayout title="Competitions & Awards | Metacortex Engineer" description="Hackathon wins, competition entries, awards and certifications by Dr Alexander Mikhalev.">
+  <Nav />
+  <div style="margin-top: 80px; padding: 2rem; max-width: 1200px; margin-left: auto; margin-right: auto;">
+    <h1 class="section-title">Competitions & Awards</h1>
+    <div class="competitions-grid">
+      {competitions.map((comp) => (
+        <CompetitionCard
+          title={comp.title}
+          organisation={comp.organisation}
+          organisation_url={comp.organisation_url}
+          date={comp.date}
+          description={comp.description}
+          url={comp.url}
+          tags={comp.tags}
+        />
+      ))}
+    </div>
+  </div>
+  <Footer />
+</BaseLayout>

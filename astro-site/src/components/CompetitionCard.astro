@@ -1,0 +1,35 @@
+---
+interface Props {
+  title: string;
+  organisation: string;
+  organisation_url?: string;
+  date: string;
+  description: string;
+  url?: string;
+  tags?: string[];
+}
+
+const { title, organisation, organisation_url, date, description, url, tags } = Astro.props;
+
+const formattedDate = new Date(date + "-01").toLocaleDateString('en-GB', {
+  month: 'short',
+  year: 'numeric',
+});
+---
+<div class="competition-card">
+  <div class="competition-header">
+    <h3 class="competition-title">{url ? <a href={url} target="_blank" rel="noopener noreferrer">{title}</a> : title}</h3>
+    <span class="competition-date">{formattedDate}</span>
+  </div>
+  <p class="competition-org">
+    {organisation_url ? <a href={organisation_url} target="_blank" rel="noopener noreferrer">{organisation}</a> : organisation}
+  </p>
+  <p class="competition-description">{description}</p>
+  {tags && tags.length > 0 && (
+    <div class="competition-tags">
+      {tags.map((tag) => (
+        <span class="tech-tag">{tag}</span>
+      ))}
+    </div>
+  )}
+</div>

@@ -723,3 +723,90 @@ footer {
         font-size: 1.8rem;
     }
 }
+
+.competitions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 1.5rem;
+}
+
+.competition-card {
+    background: var(--white);
+    border: 1px solid var(--light-gray);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: box-shadow 0.2s ease;
+}
+
+.competition-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.competition-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.competition-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--dark-gray);
+    margin: 0;
+    line-height: 1.4;
+}
+
+.competition-title a {
+    color: var(--dark-gray);
+    text-decoration: none;
+    border-bottom: 2px solid var(--primary);
+    transition: color 0.2s;
+}
+
+.competition-title a:hover {
+    color: var(--primary);
+}
+
+.competition-date {
+    font-size: 0.85rem;
+    color: var(--medium-gray);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.competition-org {
+    font-size: 0.9rem;
+    color: var(--primary);
+    margin: 0.25rem 0 0.75rem;
+    font-weight: 500;
+}
+
+.competition-org a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.competition-org a:hover {
+    text-decoration: underline;
+}
+
+.competition-description {
+    font-size: 0.9rem;
+    color: var(--medium-gray);
+    line-height: 1.6;
+    margin: 0 0 1rem;
+}
+
+.competition-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .competitions-grid {
+        grid-template-columns: 1fr;
+    }
+}

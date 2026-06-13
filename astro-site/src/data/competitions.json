@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Platinum Winner -- Build on Redis Hackathon",
+    "organisation": "Redis",
+    "organisation_url": "https://redis.com/",
+    "date": "2021-06",
+    "description": "The Pattern: Machine Learning NLP meets VR/AR. Knowledge discovery using AI and novel UX elements, all powered by Redis -- real-time data fabric turned into knowledge fabric. Outperformed Nvidia ML pipeline for BERT QA inference on CPU.",
+    "url": "https://redis.com/blog/build-on-redis-hackathon-winners",
+    "tags": ["Redis", "NLP", "VR/AR", "Machine Learning"]
+  },
+  {
+    "title": "MedGemma Competition -- Knowledge-Grounded Personalised Medicine",
+    "organisation": "Google / MedGemma",
+    "organisation_url": "https://github.com/terraphim/medgemma-competition",
+    "date": "2026-02",
+    "description": "Production-ready clinical decision support using MedGemma with Terraphim Knowledge Graph grounding. Rust multi-agent architecture with 543 tests passing, 18/18 evaluation cases grounded. KG catches hallucinated drug doses (10x overdose prevention).",
+    "url": "https://github.com/terraphim/medgemma-competition",
+    "tags": ["Rust", "AI", "Medical AI", "Knowledge Graphs"]
+  },
+  {
+    "title": "Best Student Paper Award -- ISSPA 2007",
+    "organisation": "International Conference on Information Sciences, Signal Processing and its Applications",
+    "organisation_url": "https://dblp.org/db/conf/isspa/isspa2007.html",
+    "date": "2007-02",
+    "description": "Emitter Geolocation using fusion of TDOA Data with a Particle Filter. Co-authored with R.F. Ormondroyd.",
+    "url": "https://dblp.org/db/conf/isspa/isspa2007.html",
+    "tags": ["Signal Processing", "Particle Filter", "Geolocation"]
+  },
+  {
+    "title": "Codility Golden Award -- Calcium 2015 Challenge",
+    "organisation": "Codility",
+    "organisation_url": "https://www.codility.com/",
+    "date": "2016-01",
+    "description": "Golden Award for algorithmic problem solving in the Calcium 2015 Challenge.",
+    "tags": ["Algorithms", "Competitive Programming"]
+  },
+  {
+    "title": "Chaos Legion -- Data Compliance with AI/ML",
+    "organisation": "Nationwide Building Society",
+    "organisation_url": "https://nationwide.co.uk",
+    "date": "2017-05",
+    "description": "How to achieve data compliance using AI and machine learning. Demonstrated GDPR and PCI DSS non-compliance detection on Raspberry Pi.",
+    "tags": ["AI", "Compliance", "GDPR", "IoT"]
+  },
+  {
+    "title": "Patent GB 1815423.7 -- Secure Distributed Data Storage",
+    "organisation": "UK Intellectual Property Office",
+    "organisation_url": "https://www.gov.uk/government/organisations/intellectual-property-office",
+    "date": "2018-09",
+    "description": "Led a team to prototype and patent novel technology for secure distributed data storage. Blockchain-inspired architecture.",
+    "tags": ["Patent", "Distributed Systems", "Security"]
+  },
+  {
+    "title": "TOGAF 9 Certified",
+    "organisation": "The Open Group",
+    "organisation_url": "https://www.opengroup.org/",
+    "date": "2016-06",
+    "description": "Certified in TOGAF 9 Foundation and Certified. Enterprise Architecture methodology, ADM phases, and content metamodel.",
+    "url": "https://www.credly.com/badges/0733f94c-b44a-4552-9c97-d2a294c0b6d2/public_url",
+    "tags": ["Enterprise Architecture", "TOGAF"]
+  }
+]
