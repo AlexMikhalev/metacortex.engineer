@@ -5,6 +5,7 @@ DIST_DIR="astro-site/dist"
 BUCKET="metacortex-engineer"
 
 source ~/.my_cloudflare.sh
+[ -n "${CLOUDFLARE_API_TOKEN:-}" ] || { echo "CLOUDFLARE_API_TOKEN is empty (is 1Password unlocked?)" >&2; exit 1; }
 
 upload_file() {
   local file="$1"
@@ -27,7 +28,9 @@ upload_file() {
     *.ico)  content_type="image/x-icon" ;;
   esac
 
-  wrangler r2 object put "$BUCKET/$key" --file "$file" --content-type "$content_type" --remote > /dev/null 2>&1
+  if ! out=$(wrangler r2 object put "$BUCKET/$key" --file "$file" --content-type "$content_type" --remote 2>&1); then
+    echo "FAILED $key" >&2; echo "$out" | tail -3 >&2; exit 255
+  fi
   echo "  $key"
 }
 
