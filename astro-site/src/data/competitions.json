@@ -13,7 +13,7 @@
     "organisation": "Google / MedGemma",
     "organisation_url": "https://github.com/terraphim/medgemma-competition",
     "date": "2026-02",
-    "description": "Production-ready clinical decision support using MedGemma with Terraphim Knowledge Graph grounding. Rust multi-agent architecture with 543 tests passing, 18/18 evaluation cases grounded. KG catches hallucinated drug doses (10x overdose prevention).",
+    "description": "Built a Rust-based MedGemma clinical decision-support pipeline with Terraphim knowledge-graph grounding and multi-agent orchestration. Demonstrated prevention of a 10-fold dosing error in a recorded A/B comparison: raw MedGemma recommended 800 mg of osimertinib, while the knowledge-grounded run recommended 80 mg. Evaluated across 18 scripted cases with CPU/GPU inference.",
     "url": "https://github.com/terraphim/medgemma-competition",
     "tags": ["Rust", "AI", "Medical AI", "Knowledge Graphs"]
   },
@@ -47,7 +47,8 @@
     "organisation": "UK Intellectual Property Office",
     "organisation_url": "https://www.gov.uk/government/organisations/intellectual-property-office",
     "date": "2018-09",
-    "description": "Led a team to prototype and patent novel technology for secure distributed data storage. Blockchain-inspired architecture.",
+    "description": "UK application GB1815423.7; granted patent GB2574076B. Led the prototyping team and supported patenting; sponsored and mentored the named inventor.",
+    "url": "https://patents.google.com/patent/GB2574076B/en",
     "tags": ["Patent", "Distributed Systems", "Security"]
   },
   {

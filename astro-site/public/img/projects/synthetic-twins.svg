@@ -1,15 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
-  <rect width="400" height="200" fill="#1a1a2e"/>
-  <rect x="140" y="55" width="50" height="70" rx="3" fill="none" stroke="#a8e6cf" stroke-width="1.5" opacity="0.7"/>
-  <rect x="205" y="55" width="50" height="70" rx="3" fill="none" stroke="#a8e6cf" stroke-width="1.5"/>
-  <line x1="190" y1="75" x2="205" y2="75" stroke="#a8e6cf" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="190" y1="90" x2="205" y2="90" stroke="#a8e6cf" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="190" y1="105" x2="205" y2="105" stroke="#a8e6cf" stroke-width="1" stroke-dasharray="3,2"/>
-  <text x="165" y="95" text-anchor="middle" font-family="monospace" font-size="9" fill="#a8e6cf" opacity="0.5">REAL</text>
-  <text x="230" y="95" text-anchor="middle" font-family="monospace" font-size="9" fill="#a8e6cf">MOCK</text>
-  <path d="M155 145 L200 145 L245 145" stroke="#a8e6cf" stroke-width="1" opacity="0.3"/>
-  <circle cx="155" cy="145" r="3" fill="#a8e6cf" opacity="0.5"/>
-  <circle cx="200" cy="145" r="3" fill="#a8e6cf"/>
-  <circle cx="245" cy="145" r="3" fill="#a8e6cf" opacity="0.5"/>
-  <text x="200" y="175" text-anchor="middle" font-family="monospace" font-size="10" fill="#a8e6cf" opacity="0.7">SYNTHETIC TWINS</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+  <rect width="400" height="250" rx="8" fill="#1a1a2e"/>
+  <g transform="translate(200,95)">
+    <rect x="-65" y="-35" width="55" height="70" rx="3" fill="none" stroke="#a8e6cf" stroke-width="1.5" opacity="0.7"/>
+    <rect x="10" y="-35" width="55" height="70" rx="3" fill="none" stroke="#a8e6cf" stroke-width="1.5"/>
+    <line x1="-10" y1="-18" x2="10" y2="-18" stroke="#a8e6cf" stroke-width="1" stroke-dasharray="3,2"/>
+    <line x1="-10" y1="0" x2="10" y2="0" stroke="#a8e6cf" stroke-width="1" stroke-dasharray="3,2"/>
+    <line x1="-10" y1="18" x2="10" y2="18" stroke="#a8e6cf" stroke-width="1" stroke-dasharray="3,2"/>
+    <text x="-37" y="4" text-anchor="middle" font-family="monospace" font-size="9" fill="#a8e6cf" opacity="0.5">REAL</text>
+    <text x="37" y="4" text-anchor="middle" font-family="monospace" font-size="9" fill="#a8e6cf">MOCK</text>
+  </g>
+  <text x="200" y="160" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#e5e5e5">Digital Synthetic Twins</text>
+  <text x="200" y="180" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#a3a3a3">Offline API mocks in Rust</text>
+  <g transform="translate(110,210)">
+    <path d="M0 6 L45 6 L90 6 L135 6 L180 6" stroke="#a8e6cf" stroke-width="1" opacity="0.3"/>
+    <circle cx="0" cy="6" r="3" fill="#a8e6cf" opacity="0.5"/>
+    <circle cx="45" cy="6" r="3" fill="#a8e6cf" opacity="0.7"/>
+    <circle cx="90" cy="6" r="3" fill="#a8e6cf"/>
+    <circle cx="135" cy="6" r="3" fill="#a8e6cf" opacity="0.7"/>
+    <circle cx="180" cy="6" r="3" fill="#a8e6cf" opacity="0.5"/>
+  </g>
 </svg>

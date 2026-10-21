@@ -1,16 +1,30 @@
 # metacortex.engineer
 
-> Dr Alexander Mikhalev - Technology Leader & Innovation Architect
+> Dr Alexander Mikhalev - Managing Partner, CTO and Head of AI, Zestic AI
 
 ## About
 
-Systems thinker with 20+ years in engineering, academic, and leadership positions. Pioneering the convergence of AI, ethics, systems engineering, and enterprise architecture.
+I combine technology direction with hands-on Rust, Python and TypeScript engineering. I lead the Terraphim AI privacy-preserving ecosystem and autonomous delivery infrastructure, alongside client architecture at Zestic AI. I am the author of Context Engineering: Designing AI That Understands, Remembers, Acts and Learns (2026).
 
 ## Core Projects
 
-- **Terraphim AI** (https://terraphim.ai) - Privacy-first deterministic AI assistant built with Rust. Knowledge graph learning systems, Aho-Corasick text matching, multi-agent orchestration, MCP server integration.
-- **The Pattern** (https://github.com/applied-knowledge-systems/the-pattern) - Machine Learning NLP pipeline for knowledge discovery using Redis ecosystem with VR/AR interfaces.
-- **TruthForge** - Bias detection and narrative intelligence platform for responsible AI validation.
+- **Terraphim AI** (https://terraphim.ai) - Privacy-preserving AI ecosystem built in Rust and WebAssembly, connecting local-first knowledge graphs, shared agent context, editor workflows, command-line tools and MCP integration. Inspectable graph embeddings combine curated concepts, synonym mappings and graph co-occurrence.
+- **terraphim.rs** (https://terraphim.rs) - Technical documentation site for the Rust engine and bindings behind Terraphim AI: knowledge-graph engine, deterministic matching, WebAssembly bindings and install paths.
+- **Terraphim Forge** (https://terraphim-forge.com) - Cloud code forge built for AI agents, where they triage, coordinate and execute work. PageRank issue prioritisation, an MCP server for agent coordination and a Robot API, on isolated development environments.
+- **terraphim-skills.md** (https://terraphim-skills.md) - Public catalogue for discovering, installing and publishing skills for AI coding agents, with the anonymous Skills MCP endpoint.
+- **Autonomous Delivery Factory** - AI Dark Factory connecting prioritised issues and agent execution with separate review, verification and validation gates. Human owners retain control of acceptance and merge.
+- **Digital Synthetic Twins** - Rust platform of high-fidelity mocks of third-party APIs for offline development, deterministic tests and cost-free experimentation. Drop-in compatible with official SDKs.
+- **The Pattern** (https://github.com/applied-knowledge-systems/the-pattern) - Machine Learning NLP pipeline for knowledge discovery using the Redis ecosystem, with VR/AR interfaces.
+- **Blockchain-Inspired Distributed System** - Distributed system prototype resulting in a granted UK patent.
+- **Terraphim AgentForge** (https://git.terraphim.cloud) - Gitea-based development platform extended with scoped agent identity, signed audit events, a unified event stream and branch-based collaboration.
+- **Terraphim Skills** (https://github.com/terraphim/terraphim-skills) - The signed skill packages and CLI, installable with one command. The catalogue that serves them is terraphim-skills.md.
+- **Time Agent** (https://github.com/terraphim/time-agent) - AI-native time tracking via CLI. Rust core with Cloudflare Workers API, Tauri desktop app and MCP server.
+
+This list matches the project cards on the home page. Machine-readable copy: https://metacortex.engineer/projects.json
+
+## Book
+
+- **Context Engineering: Designing AI That Understands, Remembers, Acts and Learns** (2026) - A book on the discipline behind AI software that works: domain modelling, knowledge-graph grounding, deliberate context budgets, reviewable agent memory, evaluation and governance. Release candidate v1.0.0-rc1, updated 17 October 2026.
 
 ## Skills
 
@@ -23,7 +37,9 @@ Systems thinker with 20+ years in engineering, academic, and leadership position
 
 - Blog: https://metacortex.engineer/post/ - Articles on AI, NLP, Redis, knowledge graphs, systems engineering
 - Talks: https://metacortex.engineer/talks/ - Conference presentations (EuroPython, RedisConf, INCOSE)
-- Publications: https://metacortex.engineer/publications - Patent and academic publications
+- Publications: https://metacortex.engineer/publications/ - Patent and academic publications
+- Awards: https://metacortex.engineer/competitions/ - Competition results and awards
+- CV: https://metacortex.engineer/cv/ - Curriculum vitae, with machine-readable JSON-LD at https://metacortex.engineer/cv/cv.jsonld
 
 ## Technical Stack
 
@@ -33,4 +49,3 @@ This site is built with Astro 5.x, deployed on Cloudflare R2 via a Worker router
 
 - LinkedIn: https://www.linkedin.com/in/alexmikhalev/
 - GitHub: https://github.com/AlexMikhalev
-- Blog: https://www.sci-blog.com

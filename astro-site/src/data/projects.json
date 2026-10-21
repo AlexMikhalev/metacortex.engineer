@@ -1,67 +1,127 @@
 [
   {
     "title": "Terraphim AI",
-    "description": "Privacy-first, deterministic AI assistant built with Rust. 56-crate workspace featuring knowledge graph learning systems, Aho-Corasick text matching, multi-agent orchestration, and MCP server integration. Operates entirely on local infrastructure.",
-    "tags": ["Rust", "AI", "Knowledge Graphs", "MCP"],
+    "description": "A privacy-preserving AI ecosystem built in Rust and WebAssembly, connecting local-first knowledge graphs, shared agent context, editor workflows, command-line tools and MCP integration. Inspectable graph embeddings combine curated concepts, synonym mappings and graph co-occurrence. Terraphim private-cloud infrastructure uses a Rust control plane around Firecracker microVMs for lifecycle management, resource allocation, tenant routing, snapshots and operational telemetry.",
+    "tags": [
+      "Rust",
+      "AI",
+      "Knowledge Graphs",
+      "MCP"
+    ],
     "url": "https://terraphim.ai",
     "image": "/img/projects/terraphim-ai.svg"
   },
   {
+    "title": "terraphim.rs",
+    "description": "Technical documentation site for the Rust engine and bindings behind Terraphim AI. Covers the knowledge-graph engine, deterministic Aho-Corasick matching and WebAssembly bindings, with install paths through cargo, Homebrew and curl. Documentation for the same engine rather than a separate product.",
+    "tags": [
+      "Rust",
+      "WASM",
+      "Engine",
+      "Documentation"
+    ],
+    "url": "https://terraphim.rs",
+    "image": "/img/projects/terraphim-rs.svg"
+  },
+  {
+    "title": "Terraphim Forge",
+    "description": "Cloud code forge built for AI agents, where they triage, coordinate and execute work. PageRank issue prioritisation, an MCP server for agent coordination and a Robot API for automation, running on isolated development environments. Hosted at terraphim-forge.com, with a public demo open.",
+    "tags": [
+      "Forge",
+      "AI Agents",
+      "PageRank",
+      "MCP"
+    ],
+    "url": "https://terraphim-forge.com",
+    "image": "/img/projects/terraphim-forge.svg"
+  },
+  {
+    "title": "terraphim-skills.md",
+    "description": "Public catalogue for discovering, installing and publishing skills for AI coding agents, alongside the anonymous Skills MCP endpoint that serves signed and entitlement-aware content. The marketplace surface for the Terraphim Skills packages, with guides for each supported agent and editor.",
+    "tags": [
+      "Skills",
+      "Marketplace",
+      "MCP",
+      "AI Agents"
+    ],
+    "url": "https://terraphim-skills.md",
+    "image": "/img/projects/terraphim-skills-md.svg"
+  },
+  {
+    "title": "Autonomous Delivery Factory",
+    "description": "I built and operate the AI Dark Factory, connecting prioritised issues and agent execution with separate review, verification and validation gates. Human owners retain control of acceptance and merge.",
+    "tags": [
+      "AI Agents",
+      "Delivery",
+      "Verification"
+    ]
+  },
+  {
+    "title": "Digital Synthetic Twins",
+    "description": "Rust platform of high-fidelity mock implementations of third-party APIs, for offline development, deterministic tests and cost-free experimentation. Each twin is a drop-in replacement compatible with the official SDK, with mirrored bearer-token auth, a webhook event bus, snapshot and restore for reproducible test states, and an endpoint-coverage dashboard. A shared twin-core crate carries error handling, pagination and clock abstraction across the services.",
+    "tags": [
+      "Rust",
+      "API",
+      "Testing",
+      "Axum"
+    ],
+    "image": "/img/projects/synthetic-twins.svg"
+  },
+  {
     "title": "The Pattern",
     "description": "Machine Learning NLP pipeline for knowledge discovery using Redis ecosystem. Combines VR/AR interfaces with AI to fight information complexity and enable spatial information exploration.",
-    "tags": ["Redis", "NLP", "Python", "VR/AR"],
+    "tags": [
+      "Redis",
+      "NLP",
+      "Python",
+      "VR/AR"
+    ],
     "url": "https://github.com/applied-knowledge-systems/the-pattern",
     "image": "/img/projects/the-pattern.svg"
   },
   {
     "title": "Blockchain-Inspired Distributed System",
     "description": "Led team to build innovative distributed system resulting in a technology patent. Demonstrated systematic approach to innovation and ability to inspire teams to achieve breakthrough results.",
-    "tags": ["Distributed", "Blockchain", "Patent"],
+    "tags": [
+      "Distributed",
+      "Blockchain",
+      "Patent"
+    ],
     "image": "/img/projects/blockchain.svg"
   },
   {
-    "title": "Loan Management Platform",
-    "description": "Full-stack loan management platform with Rust/WASM financial calculations, borrower portal, CRM integration, and immutable audit trails. Eight microservices with event-driven architecture.",
-    "tags": ["Rust", "WASM", "Fintech", "Microservices"],
-    "image": "/img/projects/loan-platform.svg"
-  },
-  {
-    "title": "Digital Synthetic Twins",
-    "description": "Rust-based platform providing high-fidelity mock implementations of third-party APIs for offline development, deterministic testing, and cost-free experimentation. Drop-in compatible with official SDKs.",
-    "tags": ["Rust", "API", "Testing", "Axum"],
-    "image": "/img/projects/synthetic-twins.svg"
-  },
-  {
-    "title": "Signal Intelligence Service Layer",
-    "description": "Service layer migration integrating AI capabilities with existing signal intelligence infrastructure. Bedrock integration with automated deployment pipeline.",
-    "tags": ["AI", "Migration", "Service Layer"],
-    "image": "/img/projects/signal-intel.svg"
-  },
-  {
-    "title": "TruthForge",
-    "description": "Bias detection and narrative intelligence platform for responsible AI validation. Debate arena for multi-perspective analysis with structured verdict framework.",
-    "tags": ["AI Ethics", "Bias Detection", "Responsible AI"],
-    "url": "https://truthforge.ai/",
-    "image": "/img/projects/truthforge.svg"
-  },
-  {
     "title": "Terraphim AgentForge",
-    "description": "Gitea fork extended with PageRank-based issue prioritisation, an MCP server for agent coordination, and a dedicated Robot API. A code forge designed for the era where AI agents write code alongside humans.",
-    "tags": ["Gitea", "PageRank", "MCP", "DevOps"],
+    "description": "I extended a Gitea-based development platform with scoped agent identity, signed audit events, a unified event stream and branch-based collaboration. A Rust bridge connects the platform to a kanban workflow for task coordination and review.",
+    "tags": [
+      "Gitea",
+      "PageRank",
+      "MCP",
+      "DevOps"
+    ],
     "url": "https://git.terraphim.cloud",
     "image": "/img/projects/agentforge.svg"
   },
   {
     "title": "Terraphim Skills",
-    "description": "42 production-grade skills for AI coding assistants. Disciplined engineering, Rust performance, DevOps and agent orchestration skills, cryptographically signed and installable with one command. Compatible with Claude Code, Cursor, Codex, and OpenCode.",
-    "tags": ["Skills", "AI Agents", "Rust", "Open Source"],
+    "description": "The signed skill packages and CLI for AI coding assistants, installable with one command. Disciplined engineering, Rust performance, DevOps and agent orchestration skills, cryptographically signed, compatible with Claude Code, Cursor, Codex and OpenCode. The catalogue that serves them is terraphim-skills.md.",
+    "tags": [
+      "Skills",
+      "AI Agents",
+      "Rust",
+      "Open Source"
+    ],
     "url": "https://github.com/terraphim/terraphim-skills",
     "image": "/img/projects/skills.svg"
   },
   {
     "title": "Time Agent",
     "description": "AI-native time tracking via CLI. Login, create projects and tasks, start and stop timers, log time with natural language, generate reports, sync to cloud. Local-first with zero config. Rust core with Cloudflare Workers API, Tauri desktop app, and MCP server.",
-    "tags": ["Rust", "CLI", "Cloudflare", "Tauri"],
+    "tags": [
+      "Rust",
+      "CLI",
+      "Cloudflare",
+      "Tauri"
+    ],
     "url": "https://github.com/terraphim/time-agent",
     "image": "/img/projects/time-agent.svg"
   }

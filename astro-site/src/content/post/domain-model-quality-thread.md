@@ -35,14 +35,14 @@ This is not a tooling problem. It is a structural problem. And the solution is n
 
 A domain model in this context is not a UML diagram on a wall. It is not a Confluence page with a table of definitions. It is a JSON Schema-validated document that lives in the repository, is versioned alongside the code, and is referenced by every downstream artefact in the pipeline.
 
-Here is what a real one looks like, taken from a client project we delivered for a loan management platform:
+Here is what an anonymised example looks like, adapted from a confidential client delivery:
 
 ```json
 {
   "version": "1.0",
-  "title": "Charm Loan Management Platform",
+  "title": "Client Activation Platform",
   "project_type": "client",
-  "project_slug": "charm",
+  "project_slug": "lending-platform",
   "lifecycle": {
     "state": "draft"
   },
@@ -156,7 +156,7 @@ This is the part that surprises people. They expect gate reviews to be meetings.
 
 ## What This Looks Like in Practice
 
-On the Charm loan management platform, the domain model defined 26 core entities across 9 bounded contexts. The model included a complete state machine for the loan activation lifecycle with 10 states and 14 transitions. It specified `active_is_immutable = true` as a core invariant: once a loan reaches the Active state, there is no rollback. Corrections happen through new records, never through mutation.
+On the confidential impact-finance loan management platform, the domain model defined 26 core entities across 9 bounded contexts. The model included a complete state machine for the loan activation lifecycle with 10 states and 14 transitions. It specified `active_is_immutable = true` as a core invariant: once a loan reaches the Active state, there is no rollback. Corrections happen through new records, never through mutation.
 
 This single design decision -- immutable activation -- rippled through every subsequent artefact. The API specifications could not include a PATCH endpoint for activation records. The database schema required an append-only audit trail table. The ops runbook needed a specific procedure for "activated in error" scenarios.
 

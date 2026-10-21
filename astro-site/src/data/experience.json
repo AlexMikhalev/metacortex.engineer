@@ -1,39 +1,93 @@
 [
   {
-    "title": "CTO & Head of AI",
+    "title": "Managing Partner, CTO and Head of AI",
     "company": "Zestic AI",
     "company_url": "https://zestic.ai",
     "location": "United Kingdom",
-    "date_start": "2023-09-01",
+    "date_start": "2023-07-01",
     "date_end": "",
-    "description": "AI-native consultancy architecting intelligent systems for private equity and scaling companies. Leading the AI Dark Factory infrastructure, Zestic Development Process (6D lifecycle), and delivery of AI-native platforms across finance, fintech, healthcare and industrials."
+    "description": "I set technology direction and delivery priorities across Zestic AI’s client portfolio, combining hands-on engineering with reusable AI infrastructure and staged reviews. For a confidential digital-learning provider, I led pre-signature discovery and solution design, then architecture and engineering delivery. I designed governance-agent separation and specified deployment controls for technical approval, and delivered handover documentation covering rollback, cost guardrails, secrets and validation. Other work includes connected lending workflows for a confidential impact-finance lender."
   },
   {
-    "title": "Tech Lead / AI/ML Architect",
-    "company": "Nationwide Building Society",
+    "title": "Chief Technology Officer",
+    "company": "Klarian",
+    "company_url": "",
+    "location": "United Kingdom",
+    "date_start": "2023-11-01",
+    "date_end": "2025-06-01",
+    "description": "Led AI and technology development for industrial pipeline monitoring and analytics, combining engineering models and machine learning to investigate pump efficiency and equipment anomalies. Co-authored published case studies on pump-performance analysis and orifice-plate anomaly detection."
+  },
+  {
+    "title": "AI/ML Architect",
+    "company": "Klarian",
+    "company_url": "",
+    "location": "United Kingdom",
+    "date_start": "2022-12-01",
+    "date_end": "2023-12-01",
+    "description": ""
+  },
+  {
+    "title": "Solutions Architect",
+    "company": "InfinyOn",
+    "company_url": "",
+    "location": "",
+    "date_start": "2022-12-01",
+    "date_end": "2023-12-01",
+    "description": "Concurrent contract appointment."
+  },
+  {
+    "title": "Director",
+    "company": "Applied Knowledge Systems",
+    "company_url": "",
+    "location": "",
+    "date_start": "2022-12-01",
+    "date_end": "",
+    "description": "Concurrent self-employed appointment."
+  },
+  {
+    "title": "AI/ML Architect",
+    "company": "Nationwide Building Society Ltd",
     "company_url": "https://nationwide.co.uk/",
     "location": "United Kingdom",
-    "date_start": "2021-01-01",
-    "date_end": "2023-09-01",
-    "description": "AI/ML architect, working closely with innovation and venturing team and data & analytics community. Working on privacy-preserving techniques for machine learning models, synthetic data and digital twins."
+    "date_start": "2019-01-01",
+    "date_end": "2022-12-01",
+    "description": "Led the Synthetic Data Platform from inception to enterprise capability to support data-driven innovation and reduce reliance on live data. Developed privacy-preserving machine-learning and digital-twin approaches. Contributed to AI strategy and capability roadmaps covering ethics and accountable ownership; co-analysed cyber-physical systems for the Technology Radar and advised Credit Risk on AI feasibility and limitations."
   },
   {
     "title": "Head of Prototyping Engineering",
-    "company": "Nationwide Building Society",
+    "company": "Nationwide Building Society Ltd",
     "company_url": "https://nationwide.co.uk/",
     "location": "United Kingdom",
-    "date_start": "2017-01-12",
-    "date_end": "2018-01-12",
-    "description": "Enabled Prototyping Engineering capability inside Nationwide. Led the team to create a prototype of new infrastructure to build a digital distributed organisation - powered by blockchain and Machine Learning algorithms. Invented and patented a new type of distributed storage, complementary to existing cloud/on-prem infrastructure."
+    "date_start": "2018-01-01",
+    "date_end": "2019-01-01",
+    "description": "Established and ran a prototyping engineering lab, developed distributed-infrastructure prototypes and contributed to AI and blockchain strategy. Sponsored and mentored the team member whose work resulted in a distributed-data-storage patent."
+  },
+  {
+    "title": "Solutions Architect, Accelerated Change Efficiency and DevOps",
+    "company": "Nationwide Building Society Ltd",
+    "company_url": "https://nationwide.co.uk/",
+    "location": "United Kingdom",
+    "date_start": "2017-01-01",
+    "date_end": "2018-01-01",
+    "description": "Shaped the enterprise DevOps blueprint, demonstrated architecture as code through a proof of concept and proposed a common business-value measure for change delivery."
   },
   {
     "title": "Tech Lead",
-    "company": "Nationwide Building Society",
+    "company": "Nationwide Building Society Ltd",
     "company_url": "https://nationwide.co.uk/",
     "location": "United Kingdom",
-    "date_start": "2014-01-12",
-    "date_end": "2017-01-12",
-    "description": "Tech lead working closely with Architecture and Engineering, leading the team of technical architects and systems designers delivering change across the building society in Digital, AML/Fraud, HR, Data and Analytics portfolios."
+    "date_start": "2014-12-01",
+    "date_end": "2017-01-01",
+    "description": "Led teams of 2–12 technical architects across strategic banking and regulatory-change programmes. Governed supplier designs and delivery quality, aligned architecture with enterprise strategy and challenged technical debt."
+  },
+  {
+    "title": "Director of R&D",
+    "company": "M2M Ecosphere",
+    "company_url": "",
+    "location": "",
+    "date_start": "2019-01-01",
+    "date_end": "2021-01-01",
+    "description": "Concurrent appointment with Nationwide Building Society Ltd. Established innovation processes, an R&D ecosystem, knowledge management and organisation design across Group Olvia. Deployed an AI prototype for the Group’s copper supply chain from the Democratic Republic of the Congo to China, addressing route optimisation and response to unexpected disruption."
   },
   {
     "title": "Head of Architecture and Development",
@@ -42,16 +96,16 @@
     "location": "London, United Kingdom",
     "date_start": "2011-11-01",
     "date_end": "2014-12-01",
-    "description": "Most senior technology professional, aligning business strategy with technology and product development. Building large-scale innovative IT infrastructure. Supervising Software Architects and developers."
+    "description": "Served as the most senior technology professional, aligning business strategy with product development. Led distributed engineering and design teams and built an in-house engineering team. Owned architecture across automated receipt processing, OCR, product search, mobile APIs, backend services and cloud infrastructure. Mentored data scientists and was a named co-inventor on patent application WO2013057491."
   },
   {
     "title": "Research Fellow",
-    "company": "Cranfield University / UK Ministry of Defence",
-    "company_url": "https://www.cranfield.ac.uk/themes/defence-and-security",
+    "company": "Cranfield University",
+    "company_url": "https://www.cranfield.ac.uk/",
     "location": "Shrivenham, United Kingdom",
     "date_start": "2007-05-01",
-    "date_end": "2009-12-31",
-    "description": "Development of new methods for wireless and wired communications, novel sensor networks and data fusion for in-vehicle sensor networks funded by IVHM consortium led by Rolls Royce and Boeing. Research conducted at the Defence Academy of the United Kingdom."
+    "date_end": "2012-01-01",
+    "description": "Developed wavelet-packet methods for mobile spectrum sharing and implemented the waveform on signal-generation and analysis hardware. Researched communications for in-vehicle sensor networks in an aerospace health-monitoring programme supported by a consortium led by Rolls-Royce and Boeing."
   },
   {
     "title": "IT/IS Executive",

@@ -1,17 +1,34 @@
 {
   "name": "Dr Alexander Mikhalev",
-  "role": "CTO & Head of AI, Zestic AI",
-  "tagline": "An experienced technical leader and innovator with a focus on data, engineering, AI and ML",
-  "bio": "An experienced technical leader and innovator with a focus on data, engineering, AI and ML. Capable of taking innovation from idea to production by building a complete platform with a whole lifecycle and corresponding organisation. Deep knowledge in AI/ML, data privacy, synthetic data, distributed data, natural language processing, search engines, sensors, and wired/wireless networks. Key positions include AI lead architect at Nationwide, UK Ministry of Defence, and CTO & Head of AI at Zestic AI.",
+  "role": "Managing Partner, CTO and Head of AI, Zestic AI",
+  "tagline": "Managing Partner and CTO building applied AI and autonomous delivery systems",
+  "bio": "I combine technology direction with hands-on Rust, Python and TypeScript engineering. As an inspiring technical leader, I build teams and strengthen performance, resilience, compliance and security. I lead the Terraphim AI privacy-preserving ecosystem and autonomous delivery infrastructure, alongside client architecture at Zestic AI. My experience includes enterprise architecture and the Synthetic Data Platform at Nationwide, industrial AI leadership at Klarian, startup team building at Shopitize and applied research at Cranfield. I am the author of Context Engineering: Designing AI That Understands, Remembers, Acts and Learns (2026).",
   "avatar": "/img/avatar.jpg",
   "organisations": [
-    { "name": "Zestic AI", "url": "https://zestic.ai" },
-    { "name": "Nationwide Building Society", "url": "https://www.nationwide.co.uk/" },
-    { "name": "Applied Knowledge Systems", "url": "https://github.com/applied-knowledge-systems" }
+    {
+      "name": "Zestic AI",
+      "url": "https://zestic.ai"
+    },
+    {
+      "name": "Nationwide Building Society Ltd",
+      "url": "https://www.nationwide.co.uk/"
+    },
+    {
+      "name": "Applied Knowledge Systems",
+      "url": "https://github.com/applied-knowledge-systems"
+    }
   ],
   "education": [
-    { "course": "PhD in Applied Mathematics", "institution": "Cranfield University UK", "year": 2010 },
-    { "course": "MSc (Engineer) in Information Systems and Computer Science", "institution": "Moscow State Technical University n/a Bauman (MSTU), Russia", "year": 2002 }
+    {
+      "course": "PhD in Applied Mathematics",
+      "institution": "Cranfield University UK",
+      "year": 2010
+    },
+    {
+      "course": "MSc (Engineer) in Information Systems and Computer Science",
+      "institution": "Moscow State Technical University n/a Bauman (MSTU), Russia",
+      "year": 2002
+    }
   ],
   "email": "alex@metacortex.engineer"
 }

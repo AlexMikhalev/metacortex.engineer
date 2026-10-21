@@ -15,7 +15,7 @@ Two ADF instances, ten production bugs, one merged Rust PR. A field report from 
 
 On April 17, 2026, we deployed two autonomous AI agent factories -- "AI Dark Factory" instances, or ADF -- onto a single server. The goal: have self-directed agents pick up Gitea issues, write code, submit pull requests, and close bugs without human intervention. Not a demo. Not a proof of concept. Real production work on real repositories.
 
-**Odilo ADF** manages four agents on the `zestic-ai/odilo` project. **Digital Twins ADF** manages five agents on the `terraphim/digital-twins` Rust workspace (ten crates). Both run as systemd services on a dedicated server, coordinated through Gitea with PageRank-based task prioritisation.
+**Digital-learning ADF** manages four agents on the `digital-learning-project` project. **Digital Twins ADF** manages five agents on the `terraphim/digital-twins` Rust workspace (ten crates). Both run as systemd services on a dedicated server, coordinated through Gitea with PageRank-based task prioritisation.
 
 The core reconciliation loop is a `tokio::select!` that races three event sources: a scheduler (cron triggers), nightwatch (monitoring alerts), and a tick interval (periodic polling). Tick fires every 60 seconds. Mention polling runs on every second tick (120 seconds). Cron runs hourly during working hours (`0 1-9 * * *`). The routing engine uses terraphim-automata -- Aho-Corasick matching over a knowledge graph -- to match agent tasks to the right model tier.
 
@@ -192,7 +192,7 @@ After this fix, the meta-coordinator started dispatching correctly, and the Digi
 
 Despite ten bugs in 48 hours, the system closed real issues.
 
-**Odilo ADF:**
+**Digital-learning ADF:**
 - Closed issue #35 (hardcoded path bug) and #36 (u8 overflow)
 - Created PRs #38 and #40
 - Developer agent ran multiple cron cycles autonomously
@@ -277,7 +277,7 @@ We planned for a deployment. What we got was 48 hours of production debugging. T
 
 Ten bugs in 48 hours is not a failure. It is the expected cost of deploying a distributed autonomous system for the first time. The important metric is not the bug count -- it is that both ADF instances are now running autonomously, closing real issues, submitting real PRs, and doing it without human intervention.
 
-The Odilo developer agent fixed a u8 overflow and a hardcoded path. The Digital Twins developer agent validated 14 Solr SDK tests and fixed a DashMap deadlock. These are real production fixes, not toy problems.
+The digital-learning developer agent fixed a u8 overflow and a hardcoded path. The Digital Twins developer agent validated 14 Solr SDK tests and fixed a DashMap deadlock. These are real production fixes, not toy problems.
 
 The AI Dark Factory is operational. It is fragile, it needed ten patches to get there, and the configuration surface is still too large. But it works. And now we have a setup script and a bug catalogue that means the third deployment will take hours, not days.
 

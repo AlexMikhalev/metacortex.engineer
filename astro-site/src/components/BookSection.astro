@@ -1,0 +1,22 @@
+---
+import book from '../data/book.json';
+---
+<section id="book">
+  <h2 class="section-title">Book</h2>
+  <div class="book-layout">
+    <div class="book-cover">
+      <img src="/img/book/context-engineering-cover.jpg" alt="Cover of Context Engineering: Designing AI That Understands, Remembers, Acts and Learns" loading="lazy" width="800" height="1280" />
+    </div>
+    <div class="book-detail">
+      <h3 class="book-title">{book.title}</h3>
+      <p class="book-subtitle">{book.subtitle}</p>
+      <p class="book-status">{book.status}</p>
+      <p class="book-description">{book.description}</p>
+      <ul class="book-topics">
+        {book.topics.map((topic) => (
+          <li>{topic}</li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</section>

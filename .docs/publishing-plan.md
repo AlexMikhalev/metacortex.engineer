@@ -77,7 +77,7 @@ Show real-world engineering, not just theory.
 
 6. **"Teaching AI Agents to Learn from Their Mistakes"** (#8, skip #11 as duplicate)
    - Metacognitive learning
-   - Directly relevant to TruthForge and Terraphim
+   - Directly relevant to narrative-analysis systems and Terraphim
 
 ### Phase 3: Methodology & Ecosystem (Week 5-8)
 Build the Zestic AI narrative.
@@ -125,7 +125,7 @@ Use "Dr Alexander Mikhalev, CTO & Head of AI at Zestic AI" in bylines.
 ### Internal Linking Strategy
 - Link new posts to existing Redis/NLP posts where relevant
 - Cross-link between new posts (retrieval -> KG, dangerous commands -> metacognitive)
-- Link to projects section (Terraphim AI, TruthForge) from relevant posts
+- Link to the Terraphim AI project section from relevant posts
 
 ### SEO Notes
 - Each post gets unique meta description (under 160 chars)

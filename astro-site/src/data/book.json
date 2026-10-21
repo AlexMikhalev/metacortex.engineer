@@ -1,0 +1,15 @@
+{
+  "title": "Context Engineering",
+  "subtitle": "Designing AI That Understands, Remembers, Acts and Learns",
+  "year": 2026,
+  "status": "Release candidate v1.0.0-rc1, updated 17 October 2026",
+  "description": "A book on the discipline behind AI software that works. It argues that most AI project failures are context failures, not model failures, and sets out a practice: model the domain, ground answers in an explicit knowledge graph, budget context deliberately, give agents memory and learning that can be reviewed, and keep a named person accountable for what gets accepted. The argument runs from why AI software fails differently, through knowledge graphs and deterministic search, to evaluation, controlled action and enterprise governance.",
+  "topics": [
+    "Context and failure modes",
+    "Knowledge graphs",
+    "Agent memory",
+    "Evaluation and calibration",
+    "Controlled action",
+    "Enterprise governance"
+  ]
+}
