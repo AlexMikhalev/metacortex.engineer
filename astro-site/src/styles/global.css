@@ -866,6 +866,13 @@ footer {
     padding: 0.25rem 0.75rem;
 }
 
+.book-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
 @media (max-width: 768px) {
     .book-layout {
         grid-template-columns: 1fr;

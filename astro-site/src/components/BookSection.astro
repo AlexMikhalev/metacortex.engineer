@@ -17,6 +17,13 @@ import book from '../data/book.json';
           <li>{topic}</li>
         ))}
       </ul>
+      {book.links && (
+        <div class="book-links">
+          {book.links.map((link, i) => (
+            <a href={link.url} target="_blank" rel="noopener noreferrer" class={`btn ${i === 0 ? 'btn-primary' : 'btn-secondary'}`}>{link.label}</a>
+          ))}
+        </div>
+      )}
     </div>
   </div>
 </section>

@@ -11,5 +11,15 @@
     "Evaluation and calibration",
     "Controlled action",
     "Enterprise governance"
+  ],
+  "links": [
+    {
+      "label": "Amazon UK",
+      "url": "https://www.amazon.co.uk/dp/B0HMZBWH5Q"
+    },
+    {
+      "label": "Amazon US",
+      "url": "https://www.amazon.com/dp/B0HMZBWH5Q"
+    }
   ]
 }
