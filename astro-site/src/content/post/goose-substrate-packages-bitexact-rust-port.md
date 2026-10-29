@@ -65,6 +65,33 @@ match bit-for-bit):
 
 The hash gap is honest: Goose lacks unaligned 128-bit reads, so `le64` is a byte loop. Reason-then-measure follow-up. The data-structure ratios are where the port actually lives.
 
+## The Optimisation Arc: Closing the Gap
+
+We then ran that follow-up properly — a full optimisation harness: crate-oracle fuzz corpora, property testing, an evolutionary variant sweeper, and a native `extern fn` tier. The arc:
+
+![The optimisation arc](/goose-arc.svg)
+
+| metric | baseline | optimised | Rust | ratio now |
+|---|---|---|---|---|
+| ahash 1M keys | 128ms | **2.04ms** | 3.2ms | **0.64x — faster than Rust** |
+| fxhash 1M | 110ms | **1.05ms** | 1.1ms | **0.95x — parity** |
+| AC scan 10x1MiB | 196ms | **52.9ms** | 44ms | **1.2x — near parity** |
+| btree get (batch lanes) | 89ms | **17.6ms** | 16ms | **1.1x — parity** |
+
+**How** — the layers that measured, in order:
+
+1. **`gs_ld64` gather shape** — the codegen folds the `s[i..i+8]` + byte-OR pattern into memcpy unaligned loads; the `for` loop form it didn't
+2. **`extern fn` + `c_sources`** — package-native C for `__uint128_t` folded multiply and whole hot loops; no compiler fork needed
+3. **Batch APIs** — one call per million keys instead of one per key: the ABI amortisation was the biggest single win (hash 10x → parity)
+4. **Byte-class packed DFA** — the aho-corasick crate's own dense-DFA shape: 256-wide transitions folded to ~30 equivalence classes (8x smaller table, better cache residency)
+5. **Batch lanes** — 16 interleaved btree descents so the memory system overlaps the per-level dependent loads
+
+**Verified, triple-oracle** — every optimisation is gated by the same corpora plus a fuzz layer: 8,298 hash vectors from the real crates (incl. regex 1.13.1 testdata mined), 51 random AC cases, 35,000 btree ops across `std::BTreeMap` *and* a Python oracle, and self-oracle property tests (native ≡ pure on every random input). Sinks stay bit-identical.
+
+![Verification pipeline](/goose-verify.svg)
+
+The evolutionary sweeper (`bench/evolve.py`) earned its keep on day one: it found FAN=16 optimal for the flat-blob btree (smaller nodes beat scan-width on this workload) — applied and measured, not guessed. Things tried and *reverted* after measuring: binary search inside nodes, special-state flags, `ocnt` gating — all slower here, all documented.
+
 ## Dedup, and What's Next
 
 The port killed three duplicated copies of the automaton and thesaurus modules — `tgrep`, `agent`, and `thesaurus/` (now a package) all consume `libs/`. The next step is swapping the remaining bespoke structures in `terraphim-grep`'s Goose port onto these packages, then the agent command tables onto `ahashmap` + `bbtree`.
