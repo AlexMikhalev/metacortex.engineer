@@ -69,7 +69,7 @@ The hash gap is honest: Goose lacks unaligned 128-bit reads, so `le64` is a byte
 
 We then ran that follow-up properly — a full optimisation harness: crate-oracle fuzz corpora, property testing, an evolutionary variant sweeper, and a native `extern fn` tier. The arc:
 
-![The optimisation arc](/post/img/goose-arc.svg)
+![The optimisation arc](/img/goose-arc.svg)
 
 | metric | baseline | optimised | Rust | ratio now |
 |---|---|---|---|---|
@@ -88,7 +88,7 @@ We then ran that follow-up properly — a full optimisation harness: crate-oracl
 
 **Verified, triple-oracle** — every optimisation is gated by the same corpora plus a fuzz layer: 8,298 hash vectors from the real crates (incl. regex 1.13.1 testdata mined), 51 random AC cases, 35,000 btree ops across `std::BTreeMap` *and* a Python oracle, and self-oracle property tests (native ≡ pure on every random input). Sinks stay bit-identical.
 
-![Verification pipeline](/post/img/goose-verify.svg)
+![Verification pipeline](/img/goose-verify.svg)
 
 The evolutionary sweeper (`bench/evolve.py`) earned its keep on day one: it found FAN=16 optimal for the flat-blob btree (smaller nodes beat scan-width on this workload) — applied and measured, not guessed. Things tried and *reverted* after measuring: binary search inside nodes, special-state flags, `ocnt` gating — all slower here, all documented.
 
