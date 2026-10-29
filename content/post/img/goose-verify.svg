@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 568.4115 728.3999999999999" width="568.4115" height="728.3999999999999" style="--bg:#ffffff;--fg:#1f2328;--line:#d1d9e0;--accent:#0969da;--muted:#59636e;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<polyline class="edge" data-from="RC" data-to="H" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="TSV goldens + fuzz" points="149.5245,110.7 149.5245,231.60000000000002 264.16425000000004,231.60000000000002 264.16425000000004,243.60000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="RG" data-to="H" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="302.6245,207.60000000000002 302.6245,243.60000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="PY" data-to="H" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="467.0520000000001,207.60000000000002 467.0520000000001,231.60000000000002 341.08475000000004,231.60000000000002 341.08475000000004,243.60000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="H" data-to="G" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="302.6245,280.5 302.6245,328.5" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="G" data-to="P1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="302.6245,365.4 302.6245,389.4 238.0095,389.4 238.0095,413.4" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="G" data-to="P2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="302.6245,365.4 302.6245,389.4 367.2395,389.4 367.2395,413.4" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P1" data-to="X" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="238.0095,450.29999999999995 238.0095,474.29999999999995 302.6245,474.29999999999995 302.6245,498.29999999999995" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="P2" data-to="X" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="367.2395,450.29999999999995 367.2395,474.29999999999995 302.6245,474.29999999999995 302.6245,498.29999999999995" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="X" data-to="OK" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="8,298 + 51 + 35,000 rows" points="302.6245,535.1999999999999 302.6245,651.4999999999999" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="RC" data-to="H" data-label="TSV goldens + fuzz">
+  <rect x="95.02449999999999" y="194.3" width="108.53200000000004" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="149.2905" y="209.45000000000002" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">TSV goldens + fuzz</text>
+</g>
+<g class="edge-label" data-from="X" data-to="OK" data-label="8,298 + 51 + 35,000 rows">
+  <rect x="238.12450000000004" y="578.1999999999999" width="128.728" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="302.48850000000004" y="593.3499999999999" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">8,298 + 51 + 35,000 rows</text>
+</g>
+<g class="node" data-id="RC" data-label="Rust crates
+ahash .8.12 · rustc-hash 2.1.3
+aho-corasick 1.1.3 · BTreeMap" data-shape="rectangle">
+  <rect x="40" y="40" width="219.049" height="70.7" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="149.5245" y="75.35" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="149.5245" dy="-12.350000000000001">Rust crates</tspan><tspan x="149.5245" dy="16.900000000000002">ahash .8.12 · rustc-hash 2.1.3</tspan><tspan x="149.5245" dy="16.900000000000002">aho-corasick 1.1.3 · BTreeMap</tspan></text>
+</g>
+<g class="node" data-id="H" data-label="reference harness" data-shape="rectangle">
+  <rect x="225.70400000000004" y="243.60000000000002" width="153.841" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="302.6245" y="262.05" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">reference harness</text>
+</g>
+<g class="node" data-id="RG" data-label="regex 1.13.1 testdata" data-shape="rectangle">
+  <rect x="227.55650000000003" y="170.7" width="150.13600000000002" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="302.6245" y="189.14999999999998" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">regex 1.13.1 testdata</text>
+</g>
+<g class="node" data-id="PY" data-label="python oracle" data-shape="rectangle">
+  <rect x="405.69250000000005" y="170.7" width="122.71900000000001" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="467.0520000000001" y="189.14999999999998" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">python oracle</text>
+</g>
+<g class="node" data-id="G" data-label="Goose replayers" data-shape="rectangle">
+  <rect x="231.63200000000003" y="328.5" width="141.985" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="302.6245" y="346.95" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Goose replayers</text>
+</g>
+<g class="node" data-id="P1" data-label="pure path" data-shape="rectangle">
+  <rect x="189.247" y="413.4" width="97.525" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="238.0095" y="431.84999999999997" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">pure path</text>
+</g>
+<g class="node" data-id="P2" data-label="native path" data-shape="rectangle">
+  <rect x="314.77200000000005" y="413.4" width="104.93499999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="367.2395" y="431.84999999999997" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">native path</text>
+</g>
+<g class="node" data-id="X" data-label="bit-identical?" data-shape="hexagon">
+  <polygon points="244.19500000000002,498.29999999999995 361.05400000000003,498.29999999999995 370.27900000000005,516.75 361.05400000000003,535.1999999999999 244.19500000000002,535.1999999999999 234.97000000000003,516.75" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="302.6245" y="516.75" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">bit-identical?</text>
+</g>
+<g class="node" data-id="OK" data-label="all green" data-shape="rectangle">
+  <rect x="256.08500000000004" y="651.4999999999999" width="93.079" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="302.6245" y="669.9499999999999" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">all green</text>
+</g>
+</svg>
