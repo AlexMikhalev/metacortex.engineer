@@ -95,5 +95,3 @@ The evolutionary sweeper (`bench/evolve.py`) earned its keep on day one: it foun
 ## Dedup, and What's Next
 
 The port killed three duplicated copies of the automaton and thesaurus modules — `tgrep`, `agent`, and `thesaurus/` (now a package) all consume `libs/`. The next step is swapping the remaining bespoke structures in `terraphim-grep`'s Goose port onto these packages, then the agent command tables onto `ahashmap` + `bbtree`.
-
-Full detail: [flashmap-goose PR #20](https://git.terraphim.cloud/terraphim/flashmap-goose/pulls/20) — research, design, KLS reviews and per-step commits under `Refs #19`.
