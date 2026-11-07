@@ -24,7 +24,7 @@ const formattedDate = post.data.date.toLocaleDateString('en-GB', {
 
 const tags = Array.isArray(post.data.tags) ? post.data.tags : [];
 ---
-<BaseLayout title={`${post.data.title} | Metacortex Engineer`} description={post.data.description || post.data.subtitle}>
+<BaseLayout title={`${post.data.title} | Metacortex Engineer`} description={post.data.description || post.data.subtitle} image={post.data.ogImage}>
   <Nav />
   <article class="blog-post">
     <a href="/post/" class="back-link">&larr; Back to Blog</a>

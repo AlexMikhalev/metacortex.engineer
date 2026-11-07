@@ -15,6 +15,7 @@ const postCollection = defineCollection({
     date: z.coerce.date(),
     lastmod: z.coerce.date().optional(),
     aliases: z.array(z.string()).optional(),
+    ogImage: z.string().optional(),
     draft: z.boolean().default(false),
   }),
 });
