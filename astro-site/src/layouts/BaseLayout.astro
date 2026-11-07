@@ -3,10 +3,11 @@ export interface Props {
   title: string;
   description?: string;
   image?: string;
+  canonical?: string;
 }
 
-const { title, description = 'Dr Alexander Mikhalev - AI Architect, Machine Learning & Systems Engineering', image = '/favicon.svg' } = Astro.props;
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const { title, description = 'Dr Alexander Mikhalev - AI Architect, Machine Learning & Systems Engineering', image = '/favicon.svg', canonical } = Astro.props;
+const canonicalURL = canonical ? new URL(canonical) : new URL(Astro.url.pathname, Astro.site);
 const fullImage = new URL(image, Astro.site).href;
 ---
 <!doctype html>
